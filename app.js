@@ -6,7 +6,37 @@ let Location = require('./location');
 let request = require('request');
 let fs = require('fs');
 
-let debug = process.argv.length > 2 && process.argv[2] == "--debug"
+let debug = false;
+
+let modeCallback = (cap) => console.log(cap.text);
+
+process.argv.map(function(elem) {
+  let parts = elem.split("=");
+  if (parts[0] === "--debug") {
+    debug = true;
+  }
+
+  if (parts[0] === "--mode" && parts[1] === "location") {
+    modeCallback = function(cap) {
+      location.retrieve(cap.text, function(location) {
+        if (!location) {
+          location = "undefined";
+        }
+        console.log(cap.text + " - " + location);
+      });
+    }
+  }
+
+  if (parts[0] === "--help") {
+    let helpStr = `captains:
+    --debug                       Print additional information
+    --mode=default                Set the output mode: available modes are <default,location>
+    --help                        Guess what!`
+    console.log(helpStr);
+    process.exit()
+  }
+
+});
 
 let parser = new Parser(cheerio);
 let location = new Location(cheerio, request);
@@ -29,15 +59,11 @@ request.get("https://www.docker.com/community/docker-captains", (err, res, text)
      return 0;
   }).forEach((cap) => {
     if(cap.valid) {
-      location.retrieve(cap.text, function(location) {
-        if (!location) {
-          location = "undefined";
-        }
-        console.log(cap.text + " - " + location);
-      });
+      modeCallback(cap);
       valid++;
     }
   });
+
   if(debug) {
     console.log("\nCaptains: " + captains.length +", invalid handles: " + (captains.length - valid));
   }
