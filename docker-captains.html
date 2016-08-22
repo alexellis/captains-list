@@ -1,0 +1,2072 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-974.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta name="keywords" content="docker, docker open source, docker platform, distributed applications, microservices, containers, docker containers, docker software, docker virtualization" />
+<link rel="canonical" href="https://www.docker.com/community/docker-captains" />
+<link rel="shortlink" href="https://www.docker.com/node/6856" />
+<meta property="og:site_name" content="Docker" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.docker.com/community/docker-captains" />
+<meta property="og:title" content="Docker Captains" />
+<meta property="og:updated_time" content="2016-04-27T12:07:21-07:00" />
+<meta property="og:image" content="http://www.docker.com/sites/default/files/social/docker-facebook-share.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@docker" />
+<meta name="twitter:url" content="https://www.docker.com/community/docker-captains" />
+<meta name="twitter:title" content="Docker Captains" />
+<meta name="twitter:image:src" content="http://www.docker.com/sites/default/files/social/docker-twitter-share.png" />
+<meta property="article:published_time" content="2016-04-26T00:12:35-07:00" />
+<meta property="article:modified_time" content="2016-04-27T12:07:21-07:00" />
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Docker Captains | Docker</title>
+	<link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+	<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/favicons/manifest.json">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
+			<style>
+.is_not_retina .dockercon16 .retina{
+	display:none!important;
+}
+.is_retina .dockercon16 .image_simple{
+	display:none!important;
+}
+	</style>
+	<link rel="stylesheet" href="/sites/all/themes/docker/assets/css/allcss.css" /> 
+	<link rel="stylesheet" href="/sites/all/themes/docker/assets/css/allcss1.css" /> 
+	<link rel="stylesheet" href="/sites/all/themes/docker/assets/css/allcss2.css" /> 
+	<link rel="stylesheet" href="/sites/all/themes/docker/assets/css/menu.css" />
+	<link rel="stylesheet" href="/sites/all/themes/docker/assets/css/app2.css" />
+	<link rel="stylesheet" href="/sites/all/themes/docker/assets/css/responsive.css" />
+	<link rel="stylesheet" href="/sites/all/themes/docker/assets/css/p2p.css" />
+	<link rel="stylesheet" href="/sites/all/themes/docker/assets/css/mobile_responsive.css" />
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+		<!--[if gt IE 7]> 
+	<script type="text/javascript" src="//cdn.captora.com/js/track.js"></script>
+	<script>
+	var _prum = [['id', '56f7edaeabe53d203e357b1a'],
+				 ['mark', 'firstbyte', (new Date()).getTime()]];
+	(function() {
+		var s = document.getElementsByTagName('script')[0]
+		  , p = document.createElement('script');
+		p.async = 'async';
+		p.src = '//rum-static.pingdom.net/prum.min.js';
+		s.parentNode.insertBefore(p, s);
+	})();
+	</script>
+	<![endif]-->
+<script>
+var _prum = [['id', '5787ab06abe53d133a6a895e'],
+             ['mark', 'firstbyte', (new Date()).getTime()]];
+(function() {
+    var s = document.getElementsByTagName('script')[0]
+      , p = document.createElement('script');
+    p.async = 'async';
+    p.src = '//rum-static.pingdom.net/prum.min.js';
+    s.parentNode.insertBefore(p, s);
+})();
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-6856 node-type-captains-directory path-docker-captains path-section-community" ng-app="Docker" ng-controller="DockerController">
+		<div class="off-canvas-wrap" data-offcanvas>
+		<div class="inner-wrap">
+			<header class="main-header">
+		<div class="top-right-bg"></div>
+	<!-- navigation -->
+	<!-- mobile navigation -->
+	<div class="header">
+		<div class="fixed_div">
+			<div class="burger-container">
+				<div id="burger">
+					<div class="bar topBar"></div>
+					<div class="bar btmBar"></div>
+				</div>
+			</div>
+			<nav class="user-links">
+				<a href="https://cloud.docker.com/login/">Log-In</a>
+				<a href="https://cloud.docker.com/">Sign-Up</a>
+			</nav>
+			<div class="icon icon-apple">
+				<a href="/"><img class="brand-full" src="/sites/all/themes/docker/assets/images/brand-full.svg"></a>
+				<a href="/"><img class="brand-simple" src="/sites/all/themes/docker/assets/images/brand.svg"></a>
+			</div> 
+		</div> 
+		<div class="scroll_div">
+			<ul class="nav-main"><li class="first leaf"><a href="/what-docker">What is Docker?</a></li>
+<li class="expanded has-submenu"><a href="/enterprise">Enterprise</a><ul class="nav-main"><li class="first leaf"><a href="/enterprise">Solutions</a></li>
+<li class="leaf"><a href="/enterprise">Overview</a></li>
+<li class="leaf"><a href="http://www.docker.com/products/docker-datacenter">Docker Datacenter</a></li>
+<li class="collapsed"><a href="/use-cases">Use Cases</a></li>
+<li class="leaf"><a href="/customers">Customers</a></li>
+<li class="leaf"><a href="/industry-government">For Government</a></li>
+<li class="last collapsed"><a href="/products/resources">Resources</a></li>
+</ul></li>
+<li class="leaf"><a href="/products/overview">Get Docker</a></li>
+<li class="leaf"><a href="/pricing">Pricing</a></li>
+<li class="leaf double-navstyle secondlast"><a href="/technologies/overview">Open Source</a></li>
+<li class="last expanded has-submenu"><a href="/company">Company</a><ul class="nav-main"><li class="first leaf"><a href="/company">Company</a></li>
+<li class="leaf"><a href="/company">Overview</a></li>
+<li class="leaf"><a href="/careers">Careers</a></li>
+<li class="last leaf"><a href="/company/news-and-press">News &amp; Press</a></li>
+</ul></li>
+</ul>			<ul class="nav-global"><li class="first leaf"><a href="https://docs.docker.com/" target="_blank">Docs</a></li>
+<li class="leaf"><a href="/community/events">Events</a></li>
+<li class="leaf"><a href="/docker-community">Community</a></li>
+<li class="leaf"><a href="/docker-support-services">Support</a></li>
+<li class="leaf"><a href="https://training.docker.com/" target="_blank">Training</a></li>
+<li class="leaf"><a href="/partners/partner-program">Partners</a></li>
+<li class="leaf"><a href="http://blog.docker.com/" target="_blank">Blog</a></li>
+<li class="leaf"><a href="https://cloud.docker.com/login/" target="_blank">Log-In</a></li>
+<li class="last leaf"><a href="https://cloud.docker.com/" target="_blank">Sign-up</a></li>
+</ul> 
+			<div class="shop icon icon-bag"></div>
+		</div>
+	</div>
+	<!-- mobile navigation end -->
+	<!-- full width navigation -->
+	<div class="container">
+		<div class="row desktop">
+			<div class="col-xs-2">
+				<a href="/"><img class="logo" src="/sites/all/themes/docker/assets/images/brand-full.svg"></a>
+				<a href="/"><img class="logo_safari" src="/sites/all/themes/docker/assets/images/brand-full.svg"></a>
+			</div>
+			<div class="col-xs-10">
+				<ul class="nav-global"><li class="first leaf menu-mlid-603"><a href="https://docs.docker.com/" target="_blank">Docs</a></li>
+<li class="leaf menu-mlid-1997"><a href="/community/events">Events</a></li>
+<li class="leaf menu-mlid-1998"><a href="/docker-community">Community</a></li>
+<li class="leaf menu-mlid-1999"><a href="/docker-support-services">Support</a></li>
+<li class="leaf menu-mlid-402"><a href="https://training.docker.com/" target="_blank">Training</a></li>
+<li class="leaf menu-mlid-2000"><a href="/partners/partner-program">Partners</a></li>
+<li class="leaf menu-mlid-602"><a href="http://blog.docker.com/" target="_blank">Blog</a></li>
+<li class="leaf menu-mlid-2001"><a href="https://cloud.docker.com/login/" target="_blank">Log-In</a></li>
+<li class="last leaf menu-mlid-2002"><a href="https://cloud.docker.com/" target="_blank">Sign-up</a></li>
+</ul><ul class="nav-main"><li class="first leaf menu-mlid-398"><a href="/what-docker">What is Docker?</a></li>
+<li class="expanded menu-mlid-1059 has-submenu"><a href="/enterprise">Enterprise</a><ul class="nav-main"><li class="first leaf menu-mlid-1064"><a href="/enterprise">Solutions</a></li>
+<li class="leaf menu-mlid-2365"><a href="/enterprise">Overview</a></li>
+<li class="leaf menu-mlid-3168"><a href="http://www.docker.com/products/docker-datacenter">Docker Datacenter</a></li>
+<li class="collapsed menu-mlid-993"><a href="/use-cases">Use Cases</a></li>
+<li class="leaf menu-mlid-1034"><a href="/customers">Customers</a></li>
+<li class="leaf menu-mlid-1587"><a href="/industry-government">For Government</a></li>
+<li class="last collapsed menu-mlid-985"><a href="/products/resources">Resources</a></li>
+</ul></li>
+<li class="leaf menu-mlid-954"><a href="/products/overview">Get Docker</a></li>
+<li class="leaf menu-mlid-1055"><a href="/pricing">Pricing</a></li>
+<li class="leaf menu-mlid-2005 double-navstyle secondlast"><a href="/technologies/overview">Open Source</a></li>
+<li class="last expanded menu-mlid-397 has-submenu"><a href="/company">Company</a><ul class="nav-main"><li class="first leaf menu-mlid-698"><a href="/company">Company</a></li>
+<li class="leaf menu-mlid-2366"><a href="/company">Overview</a></li>
+<li class="leaf menu-mlid-622"><a href="/careers">Careers</a></li>
+<li class="last leaf menu-mlid-1086"><a href="/company/news-and-press">News &amp; Press</a></li>
+</ul></li>
+</ul><div id="block-block-20" class="block block-block">
+				<script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.1.0";
+  analytics.load("IyBu5RsBo9R8UuqWPhCkO8yEHXeZYnKa");
+  analytics.page()
+  }}();
+
+//--><!]]>
+</script></div>			</div>
+		</div>
+	</div>
+	<!-- full width navigation end -->
+
+</header>									<div class="dockercon16">
+ 
+<section class="title_section darkblue">
+<div class="dockercon16_padding"></div>
+  <div class="container">
+  	<div class="row">          
+						<div class="col-xs-12 col-sm-12 col-md-12"> 
+			<h1>Docker Captains</h1>
+			<h2 class="max-width500">Meet the Docker experts sharing their knowledge online and offline around the world!</h2>
+					</div>
+			</div>
+  </div>
+</section>
+	<section class="docker_captian_about_section simple_section GenericDev">
+	<div class="container">
+				<div class="row">  
+			<div class="col-xs-12 col-sm-2 col-md-2 sidebarnav_section"> 
+				  <div class="region region-hero-sub">
+    <ul class="nav-sub"><li class="first leaf menu-mlid-1076"><a href="/docker-community">Community</a></li>
+<li class="leaf active-trail active menu-mlid-1857"><a href="/community/docker-captains" class="active-trail active">Docker Captains</a></li>
+<li class="leaf menu-mlid-3167"><a href="/docker-community/scholarships">Scholarships</a></li>
+<li class="last leaf menu-mlid-548"><a href="http://blog.docker.com/community-content/" target="_blank">Community News</a></li>
+</ul>  </div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-7 col-sm-push-4 col-md-push-2 text-left col-sm-offset-3 col-md-offset-2 padding_50_0"> 
+				Docker Captains are Docker experts and leaders in their communities who demonstrate a commitment to sharing their Docker knowledge with others. Members of the program are actively publishing blog posts, speaking at industry events, developing training materials, and involved with local meetups. Docker Captains were nominated as candidates for the program by the Docker team based on their exemplary contributions to and outstanding engagement with the Docker community. 
+<br /><br />
+Docker Captains are eager to bring their technical expertise to new audiences both offline and online around the world - don’t hesitate to reach out to them via the social links below!
+<br /><br />
+<i>Please note that we are not accepting submissions or nominations at this time. If you are interested in getting more involved with the Docker community, <a target="_blank" href="https://community.docker.com/">please sign up here</a>. By signing up, you can join a number of initiatives we run to support local meetup organizers, community bloggers, speakers, mentors, etc.</i>			</div>
+			<div class="col-xs-12 col-sm-3 col-md-2 col-sm-pull-6 col-md-pull-7 padding_50_0"> 
+				<img class="img-responsive" src="https://www.docker.com/sites/default/files/docker_captian_image.png" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+<section id="captians" class="docker_captian_section section GenericDev ">
+	<div class="container">
+	<div class="row">  
+	<div class="col-xs-12 col-sm-9 col-md-10 col-sm-offset-3 col-md-offset-2"> 
+		<div id="captians-container" class="cbp-l-grid-gallery">
+			<ul class="captians_list" id="media-library-loop">
+				 
+					<li id="Tony_Pujals7087_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/Tuny%20Pujals.jpg" alt="">
+								 
+								<a id="Tony_Pujals7087_info" href="#Tony_Pujals7087" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Tony Pujals</span>
+								<span class="job">Director of Cloud Engineering at Appcelerator</span>
+							</div>
+							<a id="Tony_Pujals7087_info" href="#Tony_Pujals7087" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/subfuzion"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/tonypujals"></a></li>								<li class="facebook_link"><a href="http://atomiq.io"></a></li>								<li class="github_link"><a href="https://github.com/subfuzion"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Stefan_Scherer6865_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/stefanscherer_0.jpg" alt="">
+								 
+								<a id="Stefan_Scherer6865_info" href="#Stefan_Scherer6865" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Stefan Scherer</span>
+								<span class="job">Software Engineer at SEAL Systems, Docker Pirate at Hypriot</span>
+							</div>
+							<a id="Stefan_Scherer6865_info" href="#Stefan_Scherer6865" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/stefscherer"></a></li>																<li class="facebook_link"><a href="https://stefanscherer.github.io/"></a></li>								<li class="github_link"><a href="https://github.com/StefanScherer"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Kenny_Bastani6890_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/kennybastani.jpeg" alt="">
+								 
+								<a id="Kenny_Bastani6890_info" href="#Kenny_Bastani6890" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Kenny Bastani</span>
+								<span class="job">Spring Developer Advocate at Pivotal</span>
+							</div>
+							<a id="Kenny_Bastani6890_info" href="#Kenny_Bastani6890" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/kennybastani"></a></li>								<li class="linkedin_link"><a href="http://www.linkedin.com/in/kennybastani"></a></li>								<li class="facebook_link"><a href="http://www.kennybastani.com/"></a></li>								<li class="github_link"><a href="http://www.github.com/kbastani"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Vincent_De_Smet7081_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/Vicent%20De%20Smet.jpg" alt="">
+								 
+								<a id="Vincent_De_Smet7081_info" href="#Vincent_De_Smet7081" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Vincent De Smet</span>
+								<span class="job">DevOps Engineer at Honestbee</span>
+							</div>
+							<a id="Vincent_De_Smet7081_info" href="#Vincent_De_Smet7081" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="http://www.twitter.com/vincentdesmet"></a></li>								<li class="linkedin_link"><a href="https://vn.linkedin.com/in/vincentds"></a></li>								<li class="facebook_link"><a href="http://so0k.github.io"></a></li>								<li class="github_link"><a href="https://github.com/so0k"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Mark_Rendle6886_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/markrendle.jpg" alt="">
+								 
+								<a id="Mark_Rendle6886_info" href="#Mark_Rendle6886" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Mark Rendle</span>
+								<span class="job">Founder and CEO at Rendle Labs</span>
+							</div>
+							<a id="Mark_Rendle6886_info" href="#Mark_Rendle6886" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/markrendle"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/markrendle"></a></li>								<li class="facebook_link"><a href="https://blog.rendle.io/"></a></li>								<li class="github_link"><a href="https://github.com/markrendle"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Nigel_Poulton6860_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/NigelPoulton400x400.png" alt="">
+								 
+								<a id="Nigel_Poulton6860_info" href="#Nigel_Poulton6860" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Nigel Poulton</span>
+								<span class="job">Infrastructure specialist and creator of digital content </span>
+							</div>
+							<a id="Nigel_Poulton6860_info" href="#Nigel_Poulton6860" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/nigelpoulton"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/nigelpoulton"></a></li>								<li class="facebook_link"><a href="http://blog.nigelpoulton.com/"></a></li>								<li class="github_link"><a href="https://github.com/nigelpoulton"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Phil_Estes7158_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/Phil%20Estes.jpeg" alt="">
+								 
+								<a id="Phil_Estes7158_info" href="#Phil_Estes7158" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Phil Estes</span>
+								<span class="job">Docker engine maintainer</span>
+							</div>
+							<a id="Phil_Estes7158_info" href="#Phil_Estes7158" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/estesp"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/estesp"></a></li>								<li class="facebook_link"><a href="http://integratedcode.us"></a></li>								<li class="github_link"><a href="https://github.com/estesp"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Gabriel_Schenker9994_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/gabriel-schenker-image.png" alt="">
+								 
+								<a id="Gabriel_Schenker9994_info" href="#Gabriel_Schenker9994" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Gabriel Schenker</span>
+								<span class="job">Senior Architect OTX at AlienVault</span>
+							</div>
+							<a id="Gabriel_Schenker9994_info" href="#Gabriel_Schenker9994" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/gnschenker"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/gabrielschenker"></a></li>								<li class="facebook_link"><a href="www.lostechies.com/gabrielschenker"></a></li>								<li class="github_link"><a href="https://github.com/gnschenker"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Sebastien_Goasguen6880_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/sebastiengoasguen.jpeg" alt="">
+								 
+								<a id="Sebastien_Goasguen6880_info" href="#Sebastien_Goasguen6880" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Sebastien Goasguen</span>
+								<span class="job">VP of Apache CloudStack</span>
+							</div>
+							<a id="Sebastien_Goasguen6880_info" href="#Sebastien_Goasguen6880" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/sebgoa"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/sebastien-goasguen-382b7b21"></a></li>								<li class="facebook_link"><a href="http://sebgoa.blogspot.com/"></a></li>								<li class="github_link"><a href="https://github.com/runseb"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Adrian_Mouat6902_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/adrianmouat_0.jpg" alt="">
+								 
+								<a id="Adrian_Mouat6902_info" href="#Adrian_Mouat6902" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Adrian Mouat</span>
+								<span class="job">Chief Scientist at Container Solutions</span>
+							</div>
+							<a id="Adrian_Mouat6902_info" href="#Adrian_Mouat6902" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/adrianmouat"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/adrianmouat"></a></li>																<li class="github_link"><a href="https://github.com/amouat"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="John_Zaccone6874_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/johnzaccone.png" alt="">
+								 
+								<a id="John_Zaccone6874_info" href="#John_Zaccone6874" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">John Zaccone</span>
+								<span class="job">Software Engineer at Ippon Technologies</span>
+							</div>
+							<a id="John_Zaccone6874_info" href="#John_Zaccone6874" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/JohnZaccone"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/johnzaccone"></a></li>																<li class="github_link"><a href="https://github.com/jzaccone"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Mark_Van_Holsteijn6873_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/markvanholsteijn.png" alt="">
+								 
+								<a id="Mark_Van_Holsteijn6873_info" href="#Mark_Van_Holsteijn6873" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Mark Van Holsteijn</span>
+								<span class="job">Principal Consultant at Xebia</span>
+							</div>
+							<a id="Mark_Van_Holsteijn6873_info" href="#Mark_Van_Holsteijn6873" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/mvanholsteijn"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/mvanholsteijn"></a></li>																<li class="github_link"><a href="https://github.com/mvanholsteijn"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="John_Lees-Miller7084_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/John%20Lees.jpg" alt="">
+								 
+								<a id="John_Lees-Miller7084_info" href="#John_Lees-Miller7084" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">John Lees-Miller</span>
+								<span class="job">Chief Technology Officer at Overleaf</span>
+							</div>
+							<a id="John_Lees-Miller7084_info" href="#John_Lees-Miller7084" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/jdleesmiller"></a></li>								<li class="linkedin_link"><a href="https://uk.linkedin.com/in/jdleesmiller"></a></li>																<li class="github_link"><a href="https://github.com/jdleesmiller"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Manesh_Raveendran7105_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/Manesh.jpg" alt="">
+								 
+								<a id="Manesh_Raveendran7105_info" href="#Manesh_Raveendran7105" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Manesh Raveendran</span>
+								<span class="job">Microsoft Azure MVP</span>
+							</div>
+							<a id="Manesh_Raveendran7105_info" href="#Manesh_Raveendran7105" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/ManeshRavendran"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/maneshraveendran"></a></li>								<li class="facebook_link"><a href="https://manesh.me"></a></li>								<li class="github_link"><a href="https://github.com/Manesh-R?tab=repositories"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Buc_Rogers6896_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/bucrogers.jpg" alt="">
+								 
+								<a id="Buc_Rogers6896_info" href="#Buc_Rogers6896" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Buc Rogers</span>
+								<span class="job">DevOps Container Architect at Gogo</span>
+							</div>
+							<a id="Buc_Rogers6896_info" href="#Buc_Rogers6896" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/BucRogers26th"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/bucrogers"></a></li>								<li class="facebook_link"><a href="https://26thcentury.com/"></a></li>								<li class="github_link"><a href="https://github.com/brogersyh"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Tim_Haak6877_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/timhaak.png" alt="">
+								 
+								<a id="Tim_Haak6877_info" href="#Tim_Haak6877" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Tim Haak</span>
+								<span class="job">HaakCo</span>
+							</div>
+							<a id="Tim_Haak6877_info" href="#Tim_Haak6877" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/tim_haak"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/timhaakza"></a></li>																<li class="github_link"><a href="https://github.com/timhaak"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Ilkka_Anttonen6862_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/ilkkaanttonen.jpg" alt="">
+								 
+								<a id="Ilkka_Anttonen6862_info" href="#Ilkka_Anttonen6862" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Ilkka Anttonen</span>
+								<span class="job">Emerging Technology Nordic Lead at Accenture</span>
+							</div>
+							<a id="Ilkka_Anttonen6862_info" href="#Ilkka_Anttonen6862" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/IlkkaAnttonen"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/ilkka-anttonen-3755b"></a></li>																<li class="github_link"><a href="https://github.com/SirIle"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Adrien_Blind7224_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/adrien.jpg" alt="">
+								 
+								<a id="Adrien_Blind7224_info" href="#Adrien_Blind7224" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Adrien Blind</span>
+								<span class="job">DevOps Coach</span>
+							</div>
+							<a id="Adrien_Blind7224_info" href="#Adrien_Blind7224" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/adrienblind"></a></li>								<li class="linkedin_link"><a href="https://fr.linkedin.com/in/adrienblind"></a></li>																<li class="github_link"><a href="https://github.com/adrienblind/"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Nick_Gauthier6885_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/nickgauthier.jpeg" alt="">
+								 
+								<a id="Nick_Gauthier6885_info" href="#Nick_Gauthier6885" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Nick Gauthier</span>
+								<span class="job">Founder of MeetSpace</span>
+							</div>
+							<a id="Nick_Gauthier6885_info" href="#Nick_Gauthier6885" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/ngauthier"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/nrgauthier"></a></li>								<li class="facebook_link"><a href="http://ngauthier.com/"></a></li>								<li class="github_link"><a href="https://github.com/ngauthier"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Gianluca_Arbezzano7082_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/Gianluca%20Arbezzano.jpg" alt="">
+								 
+								<a id="Gianluca_Arbezzano7082_info" href="#Gianluca_Arbezzano7082" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Gianluca Arbezzano</span>
+								<span class="job">Software Engineer at CurrencyFair</span>
+							</div>
+							<a id="Gianluca_Arbezzano7082_info" href="#Gianluca_Arbezzano7082" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/gianarb"></a></li>								<li class="linkedin_link"><a href="https://ie.linkedin.com/in/gianlucarbezzano/en"></a></li>								<li class="facebook_link"><a href="http://gianarb.it"></a></li>								<li class="github_link"><a href="https://github.com/gianarb"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Viktor_Farcic6875_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/viktorfarcic.jpg" alt="">
+								 
+								<a id="Viktor_Farcic6875_info" href="#Viktor_Farcic6875" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Viktor Farcic</span>
+								<span class="job">Senior Consultant at CloudBees</span>
+							</div>
+							<a id="Viktor_Farcic6875_info" href="#Viktor_Farcic6875" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/vfarcic"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/viktorfarcic"></a></li>								<li class="facebook_link"><a href="https://technologyconversations.com/"></a></li>								<li class="github_link"><a href="https://github.com/vfarcic"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Nick_Janetakis6870_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/nickjanetakis.jpg" alt="">
+								 
+								<a id="Nick_Janetakis6870_info" href="#Nick_Janetakis6870" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Nick Janetakis</span>
+								<span class="job">Developer · Teacher · Entrepreneur</span>
+							</div>
+							<a id="Nick_Janetakis6870_info" href="#Nick_Janetakis6870" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/nickjanetakis"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/nickjj"></a></li>								<li class="facebook_link"><a href="http://nickjanetakis.com/"></a></li>								<li class="github_link"><a href="https://github.com/nickjj"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Antonis_Kalipetis7079_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/antoniskalipetis.jpeg" alt="">
+								 
+								<a id="Antonis_Kalipetis7079_info" href="#Antonis_Kalipetis7079" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Antonis Kalipetis</span>
+								<span class="job">CTO at SourceLair</span>
+							</div>
+							<a id="Antonis_Kalipetis7079_info" href="#Antonis_Kalipetis7079" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/akalipetis"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/akalipetis"></a></li>								<li class="facebook_link"><a href="https://www.akalipetis.com"></a></li>								<li class="github_link"><a href="https://github.com/akalipetis"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Dieter_Reuter6866_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/dieterreuter.jpeg" alt="">
+								 
+								<a id="Dieter_Reuter6866_info" href="#Dieter_Reuter6866" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Dieter Reuter</span>
+								<span class="job">Sr. Consultant at SEAL Systems, Docker Pirate at Hypriot</span>
+							</div>
+							<a id="Dieter_Reuter6866_info" href="#Dieter_Reuter6866" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/Quintus23M"></a></li>																								<li class="github_link"><a href="https://github.com/DieterReuter"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Ahmet_Alp_Balkan6901_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/ahmetalpbalkan.jpeg" alt="">
+								 
+								<a id="Ahmet_Alp_Balkan6901_info" href="#Ahmet_Alp_Balkan6901" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Ahmet Alp Balkan</span>
+								<span class="job">Software Engineer at Microsoft Azure Linux Team</span>
+							</div>
+							<a id="Ahmet_Alp_Balkan6901_info" href="#Ahmet_Alp_Balkan6901" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/ahmetalpbalkan"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/ahmetalpbalkan"></a></li>								<li class="facebook_link"><a href="https://ahmetalpbalkan.com/"></a></li>								<li class="github_link"><a href="https://github.com/ahmetalpbalkan"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Fabien_Amico7088_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/FABIEN%20DOCKER%20CAPTAIN%202016%281%29.jpg" alt="">
+								 
+								<a id="Fabien_Amico7088_info" href="#Fabien_Amico7088" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Fabien Amico</span>
+								<span class="job">Founder & CTO at Treeptik</span>
+							</div>
+							<a id="Fabien_Amico7088_info" href="#Fabien_Amico7088" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/fabienamico"></a></li>								<li class="linkedin_link"><a href="https://fr.linkedin.com/in/fabien-amico-8bb85227/en"></a></li>								<li class="facebook_link"><a href="http://cloudunit.io/"></a></li>								<li class="github_link"><a href="https://github.com/fabienamico?tab=activity"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Nicolas_De_Loof6884_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/nicolasdeloof.jpg" alt="">
+								 
+								<a id="Nicolas_De_Loof6884_info" href="#Nicolas_De_Loof6884" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Nicolas De Loof</span>
+								<span class="job">Hacker at CloudBees</span>
+							</div>
+							<a id="Nicolas_De_Loof6884_info" href="#Nicolas_De_Loof6884" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="http://www.twitter.com/ndeloof"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/ndeloof"></a></li>								<li class="facebook_link"><a href="http://blog.loof.fr/"></a></li>								<li class="github_link"><a href="https://github.com/ndeloof"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Sreenivas_Makam6879_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/sreenivasmakam.jpg" alt="">
+								 
+								<a id="Sreenivas_Makam6879_info" href="#Sreenivas_Makam6879" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Sreenivas Makam</span>
+								<span class="job">Sr. Engineering Manager at Cisco Systems</span>
+							</div>
+							<a id="Sreenivas_Makam6879_info" href="#Sreenivas_Makam6879" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/srmakam"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/sreenivasmakam"></a></li>								<li class="facebook_link"><a href="https://sreeninet.wordpress.com/"></a></li>								<li class="github_link"><a href="https://github.com/smakam"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Sebastiaan_Van_Steenis6881_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/sebastienvansteenis.jpg" alt="">
+								 
+								<a id="Sebastiaan_Van_Steenis6881_info" href="#Sebastiaan_Van_Steenis6881" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Sebastiaan Van Steenis</span>
+								<span class="job">IT Architect at Xebia</span>
+							</div>
+							<a id="Sebastiaan_Van_Steenis6881_info" href="#Sebastiaan_Van_Steenis6881" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/svsteenis"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/sebastiaanvansteenis"></a></li>								<li class="facebook_link"><a href="http://nauts.io/"></a></li>								<li class="github_link"><a href="https://github.com/superseb"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Dwayne_Lessner6893_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/dwaynelessner.jpeg" alt="">
+								 
+								<a id="Dwayne_Lessner6893_info" href="#Dwayne_Lessner6893" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Dwayne Lessner</span>
+								<span class="job">‎Sr Technical Marketing Engineer at Nutanix</span>
+							</div>
+							<a id="Dwayne_Lessner6893_info" href="#Dwayne_Lessner6893" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/dlink7"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/dwaynelessner"></a></li>																<li class="github_link"><a href="https://github.com/dlessner"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Luc_Juggery9998_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/Luc.jpg" alt="">
+								 
+								<a id="Luc_Juggery9998_info" href="#Luc_Juggery9998" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Luc Juggery</span>
+								<span class="job">Senior software engineer, co-founder of GridPocket and TRAXxs</span>
+							</div>
+							<a id="Luc_Juggery9998_info" href="#Luc_Juggery9998" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/lucjuggery"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/ljuggery"></a></li>								<li class="facebook_link"><a href="https://medium.com/@lucjuggery"></a></li>								<li class="github_link"><a href="https://github.com/lucj"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Francisco_Souza6892_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/franciscosouza.jpeg" alt="">
+								 
+								<a id="Francisco_Souza6892_info" href="#Francisco_Souza6892" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Francisco Souza</span>
+								<span class="job">Senior Software Engineer at The New York Times</span>
+							</div>
+							<a id="Francisco_Souza6892_info" href="#Francisco_Souza6892" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/franciscosouza"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/franciscosouza"></a></li>																<li class="github_link"><a href="https://github.com/fsouza"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Brian_Christner6897_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/brianchristner.jpg" alt="">
+								 
+								<a id="Brian_Christner6897_info" href="#Brian_Christner6897" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Brian Christner</span>
+								<span class="job">Cloud Advocate at Swisscom AG</span>
+							</div>
+							<a id="Brian_Christner6897_info" href="#Brian_Christner6897" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/idomyowntricks"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/brianchristner"></a></li>								<li class="facebook_link"><a href="https://www.brianchristner.io"></a></li>								<li class="github_link"><a href="https://github.com/vegasbrianc"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Tiffany_Jernigan6871_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/tiffanyj.jpg" alt="">
+								 
+								<a id="Tiffany_Jernigan6871_info" href="#Tiffany_Jernigan6871" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Tiffany Jernigan</span>
+								<span class="job">Software Engineer at Intel</span>
+							</div>
+							<a id="Tiffany_Jernigan6871_info" href="#Tiffany_Jernigan6871" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/tiffanyfayj"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/tiffanyjernigan"></a></li>								<li class="facebook_link"><a href="https://medium.com/@tiffanyfayj"></a></li>								<li class="github_link"><a href="https://github.com/tiffanyfj"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Elton_Stoneman6858_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/eltonstoneman.png" alt="">
+								 
+								<a id="Elton_Stoneman6858_info" href="#Elton_Stoneman6858" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Elton Stoneman</span>
+								<span class="job">Independent Software Architect</span>
+							</div>
+							<a id="Elton_Stoneman6858_info" href="#Elton_Stoneman6858" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/EltonStoneman"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/eltonstoneman"></a></li>								<li class="facebook_link"><a href="https://blog.sixeyed.com/"></a></li>								<li class="github_link"><a href="https://github.com/sixeyed"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Jonas_Rosland6857_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/jonasrosland.jpeg" alt="">
+								 
+								<a id="Jonas_Rosland6857_info" href="#Jonas_Rosland6857" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Jonas Rosland</span>
+								<span class="job">Developer Advocate, Community Manager at EMC {code}</span>
+							</div>
+							<a id="Jonas_Rosland6857_info" href="#Jonas_Rosland6857" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/jonasrosland"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/jonasrosland"></a></li>								<li class="facebook_link"><a href="http://jonasrosland.com/"></a></li>								<li class="github_link"><a href="https://github.com/jonasrosland"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Chanwit_Kaewkasi6895_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/chanwitkaewkasi.png" alt="">
+								 
+								<a id="Chanwit_Kaewkasi6895_info" href="#Chanwit_Kaewkasi6895" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Chanwit Kaewkasi</span>
+								<span class="job">Asst. Professor at Suranaree University of Technology</span>
+							</div>
+							<a id="Chanwit_Kaewkasi6895_info" href="#Chanwit_Kaewkasi6895" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/chanwit"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/chanwit"></a></li>																<li class="github_link"><a href="https://github.com/chanwit"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Neependra_Khare6868_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/neependrakhare.png" alt="">
+								 
+								<a id="Neependra_Khare6868_info" href="#Neependra_Khare6868" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Neependra Khare</span>
+								<span class="job">Container Evangelist, Trainer, Author</span>
+							</div>
+							<a id="Neependra_Khare6868_info" href="#Neependra_Khare6868" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/neependra"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/neependra"></a></li>								<li class="facebook_link"><a href="http://neependra.net/"></a></li>								<li class="github_link"><a href="https://github.com/nkhare/"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Karl_Matthias6867_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/karlmatthias_0.jpg" alt="">
+								 
+								<a id="Karl_Matthias6867_info" href="#Karl_Matthias6867" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Karl Matthias</span>
+								<span class="job">Principal Systems Engineer at Nitro, Inc.</span>
+							</div>
+							<a id="Karl_Matthias6867_info" href="#Karl_Matthias6867" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/relistan"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/karlmatthias"></a></li>								<li class="facebook_link"><a href="http://relistan.com/"></a></li>								<li class="github_link"><a href="https://github.com/relistan"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Jeff_Nickoloff6872_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/jeffnickoloff.jpeg" alt="">
+								 
+								<a id="Jeff_Nickoloff6872_info" href="#Jeff_Nickoloff6872" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Jeff Nickoloff</span>
+								<span class="job">Principal Consultant at All in Geek Consulting</span>
+							</div>
+							<a id="Jeff_Nickoloff6872_info" href="#Jeff_Nickoloff6872" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/allingeek"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/jeffnickoloff"></a></li>								<li class="facebook_link"><a href="http://allingeek.com/"></a></li>								<li class="github_link"><a href="https://github.com/allingeek"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Alex_Ellis6947_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/alexellis.png" alt="">
+								 
+								<a id="Alex_Ellis6947_info" href="#Alex_Ellis6947" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Alex Ellis</span>
+								<span class="job">Senior Software Engineer at ADP</span>
+							</div>
+							<a id="Alex_Ellis6947_info" href="#Alex_Ellis6947" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/alexellisuk"></a></li>								<li class="linkedin_link"><a href="https://uk.linkedin.com/in/alex-ellis-84a684110"></a></li>								<li class="facebook_link"><a href="http://alexellis.io"></a></li>								<li class="github_link"><a href="https://github.com/alexellis"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Thomas_Shaw6878_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/thomasshaw.jpg" alt="">
+								 
+								<a id="Thomas_Shaw6878_info" href="#Thomas_Shaw6878" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Thomas Shaw</span>
+								<span class="job">Build Engineer at Demonware</span>
+							</div>
+							<a id="Thomas_Shaw6878_info" href="#Thomas_Shaw6878" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/tomwillfixit"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/tomwillfixit"></a></li>								<li class="facebook_link"><a href="http://thshaw.blogspot.com/"></a></li>								<li class="github_link"><a href="https://github.com/tomwillfixit"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Rajdeep_Dua6882_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/rajdeepdua.jpeg" alt="">
+								 
+								<a id="Rajdeep_Dua6882_info" href="#Rajdeep_Dua6882" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Rajdeep Dua</span>
+								<span class="job">Director, Developer Relations at Salesforce</span>
+							</div>
+							<a id="Rajdeep_Dua6882_info" href="#Rajdeep_Dua6882" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/rajdeepdua"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/rajdeepd"></a></li>																<li class="github_link"><a href="https://github.com/rajdeepd"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Marcos_Lilljedahl6887_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/marcosnils.jpg" alt="">
+								 
+								<a id="Marcos_Lilljedahl6887_info" href="#Marcos_Lilljedahl6887" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Marcos Lilljedahl</span>
+								<span class="job">Head of Research and Development at Mantika</span>
+							</div>
+							<a id="Marcos_Lilljedahl6887_info" href="#Marcos_Lilljedahl6887" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://www.twitter.com/marcosnils"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/marcosnils"></a></li>																<li class="github_link"><a href="https://github.com/marcosnils"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Lorenzo_Fontana9996_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/Lorenzo%20Fontana.jpg" alt="">
+								 
+								<a id="Lorenzo_Fontana9996_info" href="#Lorenzo_Fontana9996" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Lorenzo Fontana</span>
+								<span class="job">DevOps Expert at Kiratech</span>
+							</div>
+							<a id="Lorenzo_Fontana9996_info" href="#Lorenzo_Fontana9996" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://github.com/fntlnz"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/lorenzofontana"></a></li>								<li class="facebook_link"><a href="http://fntlnz.wtf/"></a></li>								<li class="github_link"><a href="https://github.com/fntlnz"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Scott_Coulton7089_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/Scott%20Coulton.jpg" alt="">
+								 
+								<a id="Scott_Coulton7089_info" href="#Scott_Coulton7089" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Scott Coulton</span>
+								<span class="job">Solution Architect at Healthdirect Australia</span>
+							</div>
+							<a id="Scott_Coulton7089_info" href="#Scott_Coulton7089" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/scottcoulton"></a></li>								<li class="linkedin_link"><a href="https://au.linkedin.com/in/scott-coulton-22864813"></a></li>																<li class="github_link"><a href="https://github.com/scotty-c?tab=activity"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Arun_Gutpa6898_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/arungupta.jpg" alt="">
+								 
+								<a id="Arun_Gutpa6898_info" href="#Arun_Gutpa6898" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Arun Gutpa</span>
+								<span class="job">VP of Developer Advocacy at Couchbase</span>
+							</div>
+							<a id="Arun_Gutpa6898_info" href="#Arun_Gutpa6898" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/arungupta"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/arunpgupta"></a></li>								<li class="facebook_link"><a href="http://blog.arungupta.me"></a></li>								<li class="github_link"><a href="https://github.com/arun-gupta"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Chris_Richardson6861_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/chrisrichardson_0.jpg" alt="">
+								 
+								<a id="Chris_Richardson6861_info" href="#Chris_Richardson6861" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Chris Richardson</span>
+								<span class="job">Founder of Eventuate</span>
+							</div>
+							<a id="Chris_Richardson6861_info" href="#Chris_Richardson6861" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/crichardson"></a></li>								<li class="linkedin_link"><a href="http://www.linkedin.com/in/pojos/"></a></li>								<li class="facebook_link"><a href="http://eventuate.io/"></a></li>								<li class="github_link"><a href="https://github.com/cer"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Nirmal_Mehta7200_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/nirmal.jpg" alt="">
+								 
+								<a id="Nirmal_Mehta7200_info" href="#Nirmal_Mehta7200" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Nirmal Mehta</span>
+								<span class="job">Chief Technologist at Booz Allen Hamilton</span>
+							</div>
+							<a id="Nirmal_Mehta7200_info" href="#Nirmal_Mehta7200" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="@normalfaults"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/nirmalkmehta"></a></li>								<li class="facebook_link"><a href="https://nirmal.io"></a></li>								<li class="github_link"><a href="https://github.com/normalfaults"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Christian_Jacobsen6894_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/christianjacobsen.jpg" alt="">
+								 
+								<a id="Christian_Jacobsen6894_info" href="#Christian_Jacobsen6894" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Christian Jacobsen</span>
+								<span class="job">Consultant at Jayway</span>
+							</div>
+							<a id="Christian_Jacobsen6894_info" href="#Christian_Jacobsen6894" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/chribben"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/christian-jacobsen-b8181918"></a></li>																<li class="github_link"><a href="https://github.com/chribben"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Jonathan_Leibiusky6889_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/jonathanleibusky.jpeg" alt="">
+								 
+								<a id="Jonathan_Leibiusky6889_info" href="#Jonathan_Leibiusky6889" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Jonathan Leibiusky</span>
+								<span class="job">CTO at Mantika</span>
+							</div>
+							<a id="Jonathan_Leibiusky6889_info" href="#Jonathan_Leibiusky6889" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/xetorthio"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/jonathanleibiusky"></a></li>																<li class="github_link"><a href="https://github.com/xetorthio"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Trevor_Sullivan6876_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/trevorsullivan.jpg" alt="">
+								 
+								<a id="Trevor_Sullivan6876_info" href="#Trevor_Sullivan6876" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Trevor Sullivan</span>
+								<span class="job">Cloud and Automation</span>
+							</div>
+							<a id="Trevor_Sullivan6876_info" href="#Trevor_Sullivan6876" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/pcgeek86"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/trevor-sullivan-2225237"></a></li>								<li class="facebook_link"><a href="https://trevorsullivan.net/"></a></li>								<li class="github_link"><a href="https://github.com/pcgeek86"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Philipp_Garbe6883_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/philippgarbe.png" alt="">
+								 
+								<a id="Philipp_Garbe6883_info" href="#Philipp_Garbe6883" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Philipp Garbe</span>
+								<span class="job">Lead Software Developer at AutoScout24 GmbH</span>
+							</div>
+							<a id="Philipp_Garbe6883_info" href="#Philipp_Garbe6883" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/pgarbe"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/pgarbe"></a></li>								<li class="facebook_link"><a href="http://garbe.io"></a></li>								<li class="github_link"><a href="https://github.com/pgarbe"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Andy_Jiang6900_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/andyjiang.jpg" alt="">
+								 
+								<a id="Andy_Jiang6900_info" href="#Andy_Jiang6900" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Andy Jiang</span>
+								<span class="job">Engineer at Segment</span>
+							</div>
+							<a id="Andy_Jiang6900_info" href="#Andy_Jiang6900" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/andyjiang"></a></li>								<li class="linkedin_link"><a href="https://linkedin.com/in/andyjiang"></a></li>								<li class="facebook_link"><a href="http://blog.andyjiang.com/"></a></li>								<li class="github_link"><a href="https://github.com/lambtron"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Shawn_Bower9997_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/Shawn_Bower.png" alt="">
+								 
+								<a id="Shawn_Bower9997_info" href="#Shawn_Bower9997" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Shawn Bower</span>
+								<span class="job">Cloud Architect for Cornell University</span>
+							</div>
+							<a id="Shawn_Bower9997_info" href="#Shawn_Bower9997" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/drizzt51"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/shawnbower"></a></li>								<li class="facebook_link"><a href="http://blogs.cornell.edu/cloudification/tech-blog/"></a></li>								<li class="github_link"><a href="https://github.com/sbower"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Kendrick_Coleman6859_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/kendrickcoleman.png" alt="">
+								 
+								<a id="Kendrick_Coleman6859_info" href="#Kendrick_Coleman6859" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Kendrick Coleman</span>
+								<span class="job">‎Developer Advocate at EMC</span>
+							</div>
+							<a id="Kendrick_Coleman6859_info" href="#Kendrick_Coleman6859" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/kendrickcoleman"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/kendrickcoleman"></a></li>								<li class="facebook_link"><a href="http://www.kendrickcoleman.com/"></a></li>								<li class="github_link"><a href="https://github.com/kacole2"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Luis_Herrera_Bentez7086_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/Luis%20Herredia.jpg" alt="">
+								 
+								<a id="Luis_Herrera_Bentez7086_info" href="#Luis_Herrera_Bentez7086" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Luis Herrera Benítez</span>
+								<span class="job">Chief technology officer at Antelops Consulting</span>
+							</div>
+							<a id="Luis_Herrera_Bentez7086_info" href="#Luis_Herrera_Bentez7086" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/lherrerabenitez"></a></li>								<li class="linkedin_link"><a href="https://es.linkedin.com/in/lherrera"></a></li>								<li class="facebook_link"><a href="https://medium.com/@lherrera"></a></li>								<li class="github_link"><a href="https://github.com/lherrera"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Bret_Fisher6863_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/bretfisher.jpeg" alt="">
+								 
+								<a id="Bret_Fisher6863_info" href="#Bret_Fisher6863" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Bret Fisher</span>
+								<span class="job">Independent Cloud Sysadmin and DevOps Engineer</span>
+							</div>
+							<a id="Bret_Fisher6863_info" href="#Bret_Fisher6863" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/BretFisher"></a></li>								<li class="linkedin_link"><a href=" http://www.linkedin.com/in/bretefisher"></a></li>								<li class="facebook_link"><a href="http://bretfisher.com"></a></li>								<li class="github_link"><a href="https://github.com/bretfisher"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Kyle_Baley6891_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/kylebaley.jpeg" alt="">
+								 
+								<a id="Kyle_Baley6891_info" href="#Kyle_Baley6891" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Kyle Baley</span>
+								<span class="job">Software Engineer at Particular Software</span>
+							</div>
+							<a id="Kyle_Baley6891_info" href="#Kyle_Baley6891" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/kyle_baley"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/kylebaley"></a></li>								<li class="facebook_link"><a href="http://kyle.baley.org/"></a></li>								<li class="github_link"><a href="https://github.com/kbaley"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Rafael_Gomes7129_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/Rafael%20Gomes.jpg" alt="">
+								 
+								<a id="Rafael_Gomes7129_info" href="#Rafael_Gomes7129" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Rafael Gomes</span>
+								<span class="job">Consultant at ThoughtWorks</span>
+							</div>
+							<a id="Rafael_Gomes7129_info" href="#Rafael_Gomes7129" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="http://twitter.com/gomex"></a></li>								<li class="linkedin_link"><a href="https://br.linkedin.com/in/rbgomes"></a></li>								<li class="facebook_link"><a href="techfree.com.br"></a></li>								<li class="github_link"><a href="https://github.com/gomex"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Laura_Frank6888_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/laurafrank.jpg" alt="">
+								 
+								<a id="Laura_Frank6888_info" href="#Laura_Frank6888" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Laura Frank</span>
+								<span class="job">Sr. Software Engineer at Codeship</span>
+							</div>
+							<a id="Laura_Frank6888_info" href="#Laura_Frank6888" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/rhein_wein"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/laurafrank"></a></li>								<li class="facebook_link"><a href="http://www.slideshare.net/rheinwein"></a></li>								<li class="github_link"><a href="https://github.com/rheinwein"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Ajeet_Singh_Raina6869_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/ajeetsinghraina.jpg" alt="">
+								 
+								<a id="Ajeet_Singh_Raina6869_info" href="#Ajeet_Singh_Raina6869" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Ajeet Singh Raina</span>
+								<span class="job">Technical Lead Engineer at Dell India</span>
+							</div>
+							<a id="Ajeet_Singh_Raina6869_info" href="#Ajeet_Singh_Raina6869" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/ajeetsraina"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/ajeetsraina"></a></li>																<li class="github_link"><a href="https://github.com/ajeetraina"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Everett_Toews9984_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/Everett%20Toews.jpg" alt="">
+								 
+								<a id="Everett_Toews9984_info" href="#Everett_Toews9984" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Everett Toews</span>
+								<span class="job">Developer Advocate at Rackspace</span>
+							</div>
+							<a id="Everett_Toews9984_info" href="#Everett_Toews9984" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="http://www.twitter.com/everett_toews"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/everetttoews"></a></li>								<li class="facebook_link"><a href="http://blog.phymata.com/"></a></li>								<li class="github_link"><a href="https://github.com/everett-toews"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Jonobie_Ford6864_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/jonobieford.jpg" alt="">
+								 
+								<a id="Jonobie_Ford6864_info" href="#Jonobie_Ford6864" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Jonobie Ford</span>
+								<span class="job">Sr. Program Manager for Virtual Machine Manager at Microsoft</span>
+							</div>
+							<a id="Jonobie_Ford6864_info" href="#Jonobie_Ford6864" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/jonobie"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/jonobie"></a></li>																<li class="github_link"><a href="https://github.com/jonobie"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Armen_Shimoon6899_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/armenshimoon.jpg" alt="">
+								 
+								<a id="Armen_Shimoon6899_info" href="#Armen_Shimoon6899" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Armen Shimoon</span>
+								<span class="job">Software Engineer at Amazon Echo</span>
+							</div>
+							<a id="Armen_Shimoon6899_info" href="#Armen_Shimoon6899" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/armenshimoon"></a></li>								<li class="linkedin_link"><a href="https://www.linkedin.com/in/armen-shimoon-89174a60"></a></li>								<li class="facebook_link"><a href="http://dotnetliberty.com/"></a></li>								<li class="github_link"><a href="https://github.com/ashimoon"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Dimitris_Kapanidis7083_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/Dimitris%20Kapanidis.jpg" alt="">
+								 
+								<a id="Dimitris_Kapanidis7083_info" href="#Dimitris_Kapanidis7083" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Dimitris Kapanidis</span>
+								<span class="job">Founder at Harbur.io</span>
+							</div>
+							<a id="Dimitris_Kapanidis7083_info" href="#Dimitris_Kapanidis7083" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/spiddy"></a></li>								<li class="linkedin_link"><a href="https://es.linkedin.com/in/kapanidis"></a></li>								<li class="facebook_link"><a href="https://harbur.io/"></a></li>								<li class="github_link"><a href="https://github.com/spiddy/"></a></li>							</ul>
+						</div>		
+					</li>
+				 
+					<li id="Benjamin_Wootton7080_item" class="cbp-item no_info">
+						<div class="cbp-caption">
+							<div class="img_div">
+																	<img class="img-responsive" src="https://www.docker.com/sites/default/files/Benjamin%20Wootton.jpg" alt="">
+								 
+								<a id="Benjamin_Wootton7080_info" href="#Benjamin_Wootton7080" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view2 "><span class="overlay"></span></a>
+							</div>
+							<div >
+								<span class="name">Benjamin Wootton</span>
+								<span class="job">Co-Founder & Principal Consultant at Contino </span>
+							</div>
+							<a id="Benjamin_Wootton7080_info" href="#Benjamin_Wootton7080" class="cbp-caption-defaultWrap cbp-caption-activeWrap cbp-singlePageInline cbp-nocontent view"> VIEW BIO </a>
+							<ul>
+								
+								<li class="twitter_link"><a href="https://twitter.com/benjaminwootton"></a></li>								<li class="linkedin_link"><a href="https://uk.linkedin.com/in/benjaminwootton"></a></li>								<li class="facebook_link"><a href="http://contino.io/"></a></li>								<li class="github_link"><a href="https://github.com/benjaminwootton"></a></li>							</ul>
+						</div>		
+					</li>
+							</ul>	
+		</div>
+			<span id="data_offset" class="hide">1000</span>
+			<span id="data_list_length" class="hide">67</span>
+					<div id="cbp-loadMore-bio" class="team_info_list">
+					
+				<div id="Tony_Pujals7087" class="captian_info">	
+					<span class="name">Tony Pujals</span>		
+					<p>Tony is fanatical about Docker, Node.js, Go, APIs, microservices and scalable cloud architecture. He has got extensive background experience building APIs and Web Services for Java and .NET, but has been committed to the Node platform since 2011 and deeply involved in the community as a member of the Node Foundation evangelism working group, co-founder of BayNode, which is now the third largest Node meetup in the world with ~2,300 members, and helping train over 100 developers per month. He's the Director of Cloud Engineering at Appcelerator, where he's focused on improving the process of building, deploying, and monitoring containerized microservices. You also can check Tony's blog: <a href="http://atomiq.io">atomiq.io</a></p>	
+				</div>
+					
+				<div id="Stefan_Scherer6865" class="captian_info">	
+					<span class="name">Stefan Scherer</span>		
+					<p>Stefan is a Software Engineer at SEAL Systems. He enjoys automating things and uses Docker at work in various test environments. He is an early adopter of Docker on Windows, giving feedback and sharing his experience as a Docker Captain. He is member of the Hypriot team that gives the community a very easy experience for Docker on ARM devices.</p>	
+				</div>
+					
+				<div id="Kenny_Bastani6890" class="captian_info">	
+					<span class="name">Kenny Bastani</span>		
+					<p>Kenny Bastani is a passionate technology evangelist and and open source software advocate in Silicon Valley. As an enterprise software consultant he has applied a diverse set of skills needed for projects requiring a full stack web developer in agile mode. As a passionate blogger and open source contributor, Kenny engages a community of passionate developers who are looking to take advantage of newer graph processing techniques to analyze data.</p>	
+				</div>
+					
+				<div id="Vincent_De_Smet7081" class="captian_info">	
+					<span class="name">Vincent De Smet</span>		
+					<p>Vincent is a former consultant from TRG International, an IT company based in Vietnam. He recently moved to Singapore and joined Honestbee as a DevOps engineer. He’s also co-organizer of the Docker Saigon Meetup and loves to deep dive into Container internals in articles posted to the docker-saigon.github.io blog.</p>	
+				</div>
+					
+				<div id="Mark_Rendle6886" class="captian_info">	
+					<span class="name">Mark Rendle</span>		
+					<p>Very excited about running ASP.NET Core applications in Docker, I've been speaking about it at conferences and blogging about it at blog.rendle.io.
+
+Currently using Docker Engine, Machine, Compose and looking at Swarm, going to try UCP very soon.
+
+Using Docker on Arch Linux for development and deploying on Ubuntu VMs in Azure and AWS. About to launch a new app running in cloud data centres around the world, all in Docker!</p>	
+				</div>
+					
+				<div id="Nigel_Poulton6860" class="captian_info">	
+					<span class="name">Nigel Poulton</span>		
+					<p>Living it large in the world of enterprise IT. Technical training videos at pluralsight.com, and co-host of the In Tech We Trust Podcast.</p>	
+				</div>
+					
+				<div id="Phil_Estes7158" class="captian_info">	
+					<span class="name">Phil Estes</span>		
+					<p>Phil is a Senior Technical Staff Member with IBM's Cloud Open Technologies
+team. The Open Technology team leads IBM's strategy and involvement in
+key cloud open source technologies, including Docker, Cloud Foundry, and
+Openstack. Phil is a core contributor and maintainer on the Docker engine
+project and is a leader and expert within IBM on container and cloud open
+source technologies. He regularly helps both IBM product teams and IBM's
+customers to apply container technology and concepts to their cloud strategy and
+implementation. Phil speaks regularly at industry conferences and meetups and
+enjoys helping customers and developers alike understand this fast growing
+ecosystem.</p>	
+				</div>
+					
+				<div id="Gabriel_Schenker9994" class="captian_info">	
+					<span class="name">Gabriel Schenker</span>		
+					<p>I have more than 25 years of experience as an independent consultant, architect, leader, trainer, mentor and developer. My special focus is on practicing lean or friction-less software development and continuous deployment. I am constantly advocating, promoting and supporting a continuous improvement of individual developers or development teams. I strongly believe that sharing my knowledge will lead to happier and more productive developers. I am A Docker Captain and an ASP Insider and actively blog at www.lostechies.com/gabrielschenker. Some of my specialties are: SW Architecture, CI/CD, Containers, Micro Services, CQRS, DDD, Event Sourcing, JavaScript, AngularJS, No-SQL, Lucene, REST, .NET, C#, Python, education, mentoring. I am fluent in 5 languages: German, English, French, Spanish and Italian.</p>	
+				</div>
+					
+				<div id="Sebastien_Goasguen6880" class="captian_info">	
+					<span class="name">Sebastien Goasguen</span>		
+					<p>Sebastien is a senior open source architect, member of the Apache Software Foundation he is the current VP of Apache CloudStack and member of the Libcloud PMC. He has 15 years of experience in distributed systems from high performance computing, to clouds and now container orchestration systems. In his spare time he is an IT advisor to SBEX and He is the author of the O'Reilly Docker cookbook.</p>	
+				</div>
+					
+				<div id="Adrian_Mouat6902" class="captian_info">	
+					<span class="name">Adrian Mouat</span>		
+					<p>Adrian has been involved with containers from the early days of Docker and authored the O'Reilly book "<a href="http://shop.oreilly.com/product/0636920035671.do">Using Docker</a>". He is currently Chief Scientist at Container Solutions, a pan-European company focusing on consulting and product development for microservices and containers.</p>	
+				</div>
+					
+				<div id="John_Zaccone6874" class="captian_info">	
+					<span class="name">John Zaccone</span>		
+					<p>We are currently running full-fledge docker setup in production at <a target="_blank" href="https://www.allianztravelinsurance.com/">www.allianztravelinsurance.com</a>.
+
+All applications are Dockerized including CMS, apache layer, content and purchase APIs. We use data-only containers for our CMS content DB and for config containers for a few of our apps. We build docker images as part of our CI using Jenkins/Bamboo, then ship it to the central registry, where the image will be deployed and tested in dev, qa, uat before being pushed to prod.</p>	
+				</div>
+					
+				<div id="Mark_Van_Holsteijn6873" class="captian_info">	
+					<span class="name">Mark Van Holsteijn</span>		
+					<p>Mark Van Holsteijn is a Principal Consultant at Xebia in the Netherlands. He tweets at <a target="_blank" href="https://twitter.com/mvanholsteijn">@mvanholsteijn</a>.</p>	
+				</div>
+					
+				<div id="John_Lees-Miller7084" class="captian_info">	
+					<span class="name">John Lees-Miller</span>		
+					<p>John is the Co(de)founder of <a href="https://twitter.com/overleaf">@overleaf</a>. <a href="https://twitter.com/bg_ventures">@bg_ventures</a>,  alum. Ex-<a href="https://twitter.com/ultraglobalprt">@UltraGlobalPRT</a>. He likes code, maths.</p>	
+				</div>
+					
+				<div id="Manesh_Raveendran7105" class="captian_info">	
+					<span class="name">Manesh Raveendran</span>		
+					<p>Manesh is a technology advisor and consultant specializing in cloud computing, data platforms and DevOps with key focus on hybrid workloads. He has helped many enterprises and startups to adapt cloud technologies, build solutions for datacenter scale / high scale consumer applications and services.
+
+Manesh is a Microsoft Azure MVP. He is also AWS certified Solutions Architect (Associate) and Microsoft certified Azure Solutions Architect.</p>	
+				</div>
+					
+				<div id="Buc_Rogers6896" class="captian_info">	
+					<span class="name">Buc Rogers</span>		
+					<p>Buc is using Docker to improve how deployments are done to a remote embedded system target. He is currently working with an embedded Linux docker target and is also involved with a datacenter migration from VMs to Docker. Buc has worked a lot with Docker Windows Containers.</p>	
+				</div>
+					
+				<div id="Tim_Haak6877" class="captian_info">	
+					<span class="name">Tim Haak</span>		
+					<p>Currently using docker on Ubuntu and Centos servers but prefer Ubuntu as it generally works better :) I have been using it to manage deployments. 
+
+Things I've used it for: HaProxy, Logstash Stack (Each piece and individual container), Etcd, Nginx, Php Applications, Node Application, Mongo, RethinkDB, MySQL, MariaDB. 
+
+I maintain a couple images related to personal play back ie Plex etc.</p>	
+				</div>
+					
+				<div id="Ilkka_Anttonen6862" class="captian_info">	
+					<span class="name">Ilkka Anttonen</span>		
+					<p>Created the basis for Accenture's TLDR framework. Trying to figure out the best building blocks enabling the best developer experience and working production set-up.</p>	
+				</div>
+					
+				<div id="Adrien_Blind7224" class="captian_info">	
+					<span class="name">Adrien Blind</span>		
+					<p>Adrien is a former consultant from Octo Technology, a French IT consulting firm. He recently joined Societe Generale as a DevOps coach and Infrastructure as Code product owner, driving the developers new needs toward infrastructure and helping them to leverage on those new principles and tools.
+
+Fond of Docker, he’s also co-organizer of the Paris Docker Meetup, and speaks regularly on this topic.</p>	
+				</div>
+					
+				<div id="Nick_Gauthier6885" class="captian_info">	
+					<span class="name">Nick Gauthier</span>		
+					<p>Nick Gauthier is a classically trained computer scientist turned web developer whose journey started with Ruby on Rails, continued with JavaScript, and currently resides in the land of Go and Docker. He's spoken on a variety of topics, written a few e-books, and ran a couple training classes along the way.</p>	
+				</div>
+					
+				<div id="Gianluca_Arbezzano7082" class="captian_info">	
+					<span class="name">Gianluca Arbezzano</span>		
+					<p>Gianluca is passionate about helping teams improve their development environment using continuous integration, automation and modern tools to work better and faster. He embraces the DevOps culture, open source contributor, blogger and speaker. He writes code in PHP, golang, js and other languages.</p>	
+				</div>
+					
+				<div id="Viktor_Farcic6875" class="captian_info">	
+					<span class="name">Viktor Farcic</span>		
+					<p>Viktor Farcic is a Senior Consultant at CloudBees. He coded using a plethora of languages starting with Pascal (yes, he is old), Basic (before it got Visual prefix), ASP (before it got .Net suffix), C, C++, Perl, Python, ASP.Net, Visual Basic, C#, JavaScript, etc. He never worked with Fortran. His current favourites are Scala and JavaScript even though most of his office hours are spent with Java. His big passions are Microservices, Continuous Integration, Delivery and Deployment (CI/CD) and Test-Driven Development (TDD). He often speaks at community gatherings and conferences (latest can be found here).
+
+He wrote <a target="_blank" href="https://leanpub.com/the-devops-2-toolkit">The DevOps 2.0 Toolkit: Automating the Continuous Deployment Pipeline with Containerized Microservices</a> and the Test-Driven Java Development books.
+
+His random thoughts and tutorials can be found on his blog <a target="_blank"  href="https://technologyconversations.com/">TechnologyConversations.com</a>.</p>	
+				</div>
+					
+				<div id="Nick_Janetakis6870" class="captian_info">	
+					<span class="name">Nick Janetakis</span>		
+					<p>Nick Janetakis is a software developer, teacher and entrepreneur. He is also the creator of the <a target="_blank"  href="https://www.udemy.com/the-docker-for-devops-course-from-development-to-production/?couponCode=DOCKER_CAPTAIN_20">Docker for DevOps</a> and <a target="_blank"  href="https://www.udemy.com/scaling-docker-on-aws/?couponCode=DOCKER_CAPTAIN_20">Scaling Docker on AWS</a> online courses.
+
+Nick is focused on learning about technology and sharing that knowledge with others. Prior to releasing courses, he was working as a software consultant for over half a decade.</p>	
+				</div>
+					
+				<div id="Antonis_Kalipetis7079" class="captian_info">	
+					<span class="name">Antonis Kalipetis</span>		
+					<p>I'm the CTO at <a href="https://www.sourcelair.com">SourceLair</a>, a Docker-based online IDE. I'm an Electrical and Computer engineer from Athens, Greece and I love writing code and drinking coffee. I hack with Django, but I like to get my hands dirty with all sorts of different stacks and technologies. I've worked in different positions in the past, from Android developer to backend developer. Feel free to reach me at <a href="https://twitter.com/akalipetis">@akalipetis</a> or <a href="https://www.akalipetis.com">akalipetis.com</a>.</p>	
+				</div>
+					
+				<div id="Dieter_Reuter6866" class="captian_info">	
+					<span class="name">Dieter Reuter</span>		
+					<p>Dieter is working as a Senior Consultant for his customers on-site to turn real world problems into working solutions. He is using Docker container technologies since more than two years and is passionate about to push Docker to ARM devices for IoT applications and high-density ARMv8 cloud servers.</p>	
+				</div>
+					
+				<div id="Ahmet_Alp_Balkan6901" class="captian_info">	
+					<span class="name">Ahmet Alp Balkan</span>		
+					<p>Ahmet Alp Balkan is a Software Engineer in Microsoft Azure Linux Team. He is one of the top Docker contributors and maintainer of Azure plugins for various Docker projects. He made the first contributions to Docker from Microsoft and later on worked on porting the Docker command line interface to Windows. He actively blogs and tweets.</p>	
+				</div>
+					
+				<div id="Fabien_Amico7088" class="captian_info">	
+					<span class="name">Fabien Amico</span>		
+					<p>Founder and CTO at <a href="http://treeptik.fr/">Treeptik</a> I created with a dream team "<a href="http://cloudunit.io/">Cloudunit.io</a>". Focused on how create platforms that allow to release faster and more often.</p>	
+				</div>
+					
+				<div id="Nicolas_De_Loof6884" class="captian_info">	
+					<span class="name">Nicolas De Loof</span>		
+					<p>Using docker engine on a daily basis, mostly to reproduce various environments so I can safely experiment without breaking my laptop. Created <a  target="_blank"  href="https://www.youtube.com/channel/UCOAhkxpryr_BKybt9wIw-NQ">YouTube Channel "Quoi d'neuf Docker"</a> to share knowledge and enthusiasm with others.</p>	
+				</div>
+					
+				<div id="Sreenivas_Makam6879" class="captian_info">	
+					<span class="name">Sreenivas Makam</span>		
+					<p>Sreenivas Makam is currently working as a senior engineering manager at Cisco Systems, Bangalore. His interests include SDN, NFV, Network Automation, DevOps, and cloud technologies, and he likes to try out and follow open source projects in these areas. His blog can be found at <a target="_blank"  href="https://sreeninet.wordpress.com/">sreeninet.wordpress.com</a> and his hacky code at <a  target="_blank"  href="https://github.com/smakam">github.com/smakam</a>.
+
+Sreenivas's blog articles have been published in Docker Weekly newsletters. His book on <a target="_blank"  href="https://www.packtpub.com/networking-and-servers/mastering-coreos">Mastering CoreOS</a> got published in February 2016. He has done the technical reviewing for Mastering Ansible book, Packt Publishing, Ansible Networking Report, O'Reilly Publisher and Network programmability and Automation book, O'Reilly Publisher. He has <a target="_blank"  href="http://www.slideshare.net/SreenivasMakam/presentations">given presentations at Docker and other meetups in Bangalore</a>.</p>	
+				</div>
+					
+				<div id="Sebastiaan_Van_Steenis6881" class="captian_info">	
+					<span class="name">Sebastiaan Van Steenis</span>		
+					<p>Loves to automate infrastructure! Codes in Golang. Likes to focus on security. Read our blogs at <a href="http://nauts.io">nauts.io</a> and follow <a href="https://twitter.com/svsteenis">@svsteenis</a> on Twitter!</p>	
+				</div>
+					
+				<div id="Dwayne_Lessner6893" class="captian_info">	
+					<span class="name">Dwayne Lessner</span>		
+					<p>I am currently employed as a Technical Marketing Engineer for Nutanix. I’ve have experience in Health Care and the Energy Sector in Western Canada. I have been in IT for over 10 years, starting off as a Programmer and later moving on to Network Operations\Infrastructure. I have seen a lot of things cross my computer screen. I’ve organized VMware User groups and other technical meetings in my local area. I have spoke at past BriForum’s, VMware User Groups meetings & VMware Forum events.</p>	
+				</div>
+					
+				<div id="Luc_Juggery9998" class="captian_info">	
+					<span class="name">Luc Juggery</span>		
+					<p>Hi, I’m Luc a senior software engineer, co-founder of GridPocket and TRAXxs, 2 French startups. Avid learner, I like trying new technologies and share my finding creating tutorials and writing blog posts. I got the wow effect when I discovered Docker and I now love working with components of the Docker ecosystem. My main areas of interest: tests automation, CI/CD pipeline and HA architectures. Node.js and MongoDB are some other important elements of my technology stack. Just started learning Go and Clojure.</p>	
+				</div>
+					
+				<div id="Francisco_Souza6892" class="captian_info">	
+					<span class="name">Francisco Souza</span>		
+					<p>Senior Software Engineer at The New York Times. Previously at Globo.com, where helped to create tsuru, an open source extensible PaaS built on top of Docker. Also known for starting go-dockerclient, the non-official Go client for the Docker remote API.</p>	
+				</div>
+					
+				<div id="Brian_Christner6897" class="captian_info">	
+					<span class="name">Brian Christner</span>		
+					<p>Brian Christner is a Cloud Advocate for Swisscom a Switzerland based Telecom where they are busy deploying a large Docker infrastructure. Brian is passionate about Linux, Docker or anything with a .IO domain name and regularly contributes Docker articles and GitHub projects.</p>	
+				</div>
+					
+				<div id="Tiffany_Jernigan6871" class="captian_info">	
+					<span class="name">Tiffany Jernigan</span>		
+					<p>Tiffany currently is a software engineer consulting for Docker. She previously was at Intel Corporation as a cloud software engineer in the Software Defined Infrastructure (SDI) group and is a graduate from the Georgia Institute of Technology. After pursuing a career in electrical engineering, she decided to transition to software engineering. When Tiffany is not writing software, she is learning French, reading mystery novels, in the gym practicing gymnastics, or spending time with family and friends.</p>	
+				</div>
+					
+				<div id="Elton_Stoneman6858" class="captian_info">	
+					<span class="name">Elton Stoneman</span>		
+					<p>Elton is a Software Architect, Docker Captain, Pluralsight Author and Microsoft MVP. He has been connecting systems since 2000, and his recent projects have blended microservices and Big Data. Elton is currently working with a client in the financial industry, who are gearing up for the Windows Server release that will let them bring Docker into their domain. He is also writing a book coming out in the summer, called Docker Succinctly.</p>	
+				</div>
+					
+				<div id="Jonas_Rosland6857" class="captian_info">	
+					<span class="name">Jonas Rosland</span>		
+					<p>Developer Advocate and Community Manager at <a target="_blank" href="http://emccode.com/">EMC {code}</a> at EMC {code}. Speaker at many international events such as OSCON, PuppetConf, VMworld and EMC World. Love to help people understand new and interesting technology!</p>	
+				</div>
+					
+				<div id="Chanwit_Kaewkasi6895" class="captian_info">	
+					<span class="name">Chanwit Kaewkasi</span>		
+					<p>I'm a Docker Swarm Maintainer. I ported Swarm to Windows and developed a number of Swarm features in the early (v0.1) days.  I am running a low-power cluster laboratory. We have been doing many interesting experiments on the Docker stack.
+
+I have been serving as a Technical Cloud Adviser to many companies in Thailand, where they have been setting up Swarm clusters for their production environments.</p>	
+				</div>
+					
+				<div id="Neependra_Khare6868" class="captian_info">	
+					<span class="name">Neependra Khare</span>		
+					<p>Neependra Khare offers training and consulting services around container technologies. With more than a decade of experience in the IT industry, he has worked as a System Administrator, Support Engineer, File System Developer, and Performance Engineer. 
+
+His book on Docker, <a target="_blank" href="https://www.packtpub.com/virtualization-and-cloud/docker-cookbook">Docker Cookbook</a>, was published last year. He is running the Docker meetup group in Bangalore, India for more than 2 years. Earlier this year, he travelled to <a target="_blank" href="http://neependra.net/?p=1532">different cities in India and delivered 1 day Docker 101 workshops</a> free of cost. Neependra is currently in the process to form his company.</p>	
+				</div>
+					
+				<div id="Karl_Matthias6867" class="captian_info">	
+					<span class="name">Karl Matthias</span>		
+					<p>Ran Docker in production for 2 years at New Relic. Maintainer of Centurion, a Docker deployment tool, co-maintainer of Dogestry, Co-Author of "Docker: Up and Running" from O'Reilly Media. Author of Sidecar, a Docker-native service discovery system.</p>	
+				</div>
+					
+				<div id="Jeff_Nickoloff6872" class="captian_info">	
+					<span class="name">Jeff Nickoloff</span>		
+					<p>Jeff Nickoloff is an independent software engineer, author, leader, and former manager. He's into microservices, building products, and solving interesting problems. Check out his book, Docker in Action, his blog on Medium, and his consulting company All in Geek Consulting.
+
+Jeff has been using Docker since May 2013 and have integrated it into most development and daily workflows. He is using several different Docker workloads in all stages of development and release. Jeff has also helped his clients integrate Docker into several aspects of their existing tech stacks and determine strategies for increasing adoption.</p>	
+				</div>
+					
+				<div id="Alex_Ellis6947" class="captian_info">	
+					<span class="name">Alex Ellis</span>		
+					<p>Alex is a Senior Software Engineer with expertise in the full Microsoft .NET stack, Node.js and Ruby. He enjoys making robots and IoT-connected projects with Linux and the Raspberry PI microcomputer. He is a writer for Linux User and Developer magazine and also produces tutorials on Docker, coding and IoT for his tech blog at <a href="http://alexellis.io">alexellis.io</a>.</p>	
+				</div>
+					
+				<div id="Thomas_Shaw6878" class="captian_info">	
+					<span class="name">Thomas Shaw</span>		
+					<p>Thomas has been a Build Engineer for 3 years and began promoting Docker usage in Sept 2014. Today we have Dockerised build and test pipelines.  Thomas continues to drive Docker adoption through Meetups and bootcamps in his native Dublin.</p>	
+				</div>
+					
+				<div id="Rajdeep_Dua6882" class="captian_info">	
+					<span class="name">Rajdeep Dua</span>		
+					<p>Creating docker content and contributing to the community. Writing books and tutorials, speaking at docker meetups.</p>	
+				</div>
+					
+				<div id="Marcos_Lilljedahl6887" class="captian_info">	
+					<span class="name">Marcos Lilljedahl</span>		
+					<p>OS evangelist and Golang lover. I have a strong background in distributed systems and app architecture. I'm currently working in a Machine Learning startup that brings latest in research to industry.
+
+We run Machine learning apps in a fully dockerized environment using compose / machine and engine mainly.</p>	
+				</div>
+					
+				<div id="Lorenzo_Fontana9996" class="captian_info">	
+					<span class="name">Lorenzo Fontana</span>		
+					<p>Lorenzo Fontana is a DevOps Expert at Kiratech, his mission is to help companies and teams to adopt DevOps practices and culture.
+Favourite topics: Containers, Networking, Security, Distributed Systems</p>	
+				</div>
+					
+				<div id="Scott_Coulton7089" class="captian_info">	
+					<span class="name">Scott Coulton</span>		
+					<p>Scott is a solutions architect with 10 years’ experience in the managed services and hosting space. He has a extensive experience in architecture. Rolling out systems and network solutions for national and multinational companies with a wide variety of technologies, including AWS, Puppet, Docker, Cisco, VMware, Microsoft and Linux. My design strengths are in cloud computing, automation and the security space.</p>	
+				</div>
+					
+				<div id="Arun_Gutpa6898" class="captian_info">	
+					<span class="name">Arun Gutpa</span>		
+					<p>Arun Gupta is the vice president of developer advocacy at Couchbase. He has been building developer communities for 10+ years at Sun, Oracle, and Red Hat. He has deep expertise in leading cross-functional teams to develop and execute strategy, planning and execution of content, marketing campaigns, and programs. Prior to that he led engineering teams at Sun and is a founding member of the Java EE team.
+
+Gupta has authored more than 2,000 blog posts on technology. He has extensive speaking experience in more than 40 countries on myriad topics and is a JavaOne Rock Star. Gupta also founded the Devoxx4Kids chapter in the US and continues to promote technology education among children. An author of a best-selling book, an avid runner, a globe trotter, a Java Champion, a JUG leader, and a Docker Captain, he is easily accessible at <a target="_blank" href="https://twitter.com/arungupta">@arungupta</a>.</p>	
+				</div>
+					
+				<div id="Chris_Richardson6861" class="captian_info">	
+					<span class="name">Chris Richardson</span>		
+					<p>Chris Richardson is a developer and architect. He is the author of POJOs in Action, which describes how to build enterprise Java applications with frameworks such as Spring and Hibernate. Chris was also the founder of the original CloudFoundry.com, an early Java PaaS for Amazon EC2. He is the creator of <a target="_blank" href="http://microservices.io/">http://microservices.io</a>, a website describing how to develop and deploy microservices. Chris provides microservices consulting and training and is working on his third startup <a target="_blank" href="http://eventuate.io/">http://eventuate.io</a>, an application platform for developing microservices. </p>	
+				</div>
+					
+				<div id="Nirmal_Mehta7200" class="captian_info">	
+					<span class="name">Nirmal Mehta</span>		
+					<p>Chief Technologist in the Strategic Innovations Group at Booz Allen Hamilton specializing in research, implementation and integration of emerging technologies to Booz Allen’s federal government client base. He leads the firms efforts in containerization and distributed application architectures, and thought leader for DevOps practices. He is passionate about Open Source, Containerization, Cloud Automation, DevOps, Data Center Transformation and integrating open-source software to push the capabilities of future IT infrastructure. He focuses on bringing leading edge technologies to enterprise systems for commercial and public sector clients.</p>	
+				</div>
+					
+				<div id="Christian_Jacobsen6894" class="captian_info">	
+					<span class="name">Christian Jacobsen</span>		
+					<p>Christian is a software consultant who's been hacking since the heydays of Commodore 64.  His main area of expertise is .NET but can't stop him self from fiddling with other platforms and languages especially the functional ones.
+
+When he's not spending time in front of a computer he enjoys playing soccer, "innebandy" (floorball) and being with his wife and two boys.</p>	
+				</div>
+					
+				<div id="Jonathan_Leibiusky6889" class="captian_info">	
+					<span class="name">Jonathan Leibiusky</span>		
+					<p>We use docker engine and compose to deploy machine learning microservices products in AWS. We do container migration to avoid bringing down apps and to do immediate scaling and lower warmup times.</p>	
+				</div>
+					
+				<div id="Trevor_Sullivan6876" class="captian_info">	
+					<span class="name">Trevor Sullivan</span>		
+					<p>I've been a veteran of the IT industry since 2004, and enjoy working with automation, cloud, creating training, and much more! On the personal side, I enjoy motorcycling, beer, and some gaming!</p>	
+				</div>
+					
+				<div id="Philipp_Garbe6883" class="captian_info">	
+					<span class="name">Philipp Garbe</span>		
+					<p>Philipp is driven by technologies and tools that allows him to release faster and more often. He expects that every commit automatically goes into production and it shouldn't surprise that he's excited about microservices, docker and the cloud. Affected by Pain Driven Development, he believes that things needs to be changed whenever the pain is big enough.</p>	
+				</div>
+					
+				<div id="Andy_Jiang6900" class="captian_info">	
+					<span class="name">Andy Jiang</span>		
+					<p>We use Docker with ECS. We have it running in production. Read more here: <a target="_blank" href="https://segment.com/blog/rebuilding-our-infrastructure/">segment.com/blog/rebuilding-our-infrastructure/tw/</A></p>	
+				</div>
+					
+				<div id="Shawn_Bower9997" class="captian_info">	
+					<span class="name">Shawn Bower</span>		
+					<p>Shawn Bower is the Cloud Architect for Cornell University.  He has helped to move many of the University’s workloads to Docker and the cloud.  When not coding Shawn is sleeping.</p>	
+				</div>
+					
+				<div id="Kendrick_Coleman6859" class="captian_info">	
+					<span class="name">Kendrick Coleman</span>		
+					<p>Kendrick Coleman is a reformed sysadmin turned coder and awaits to tackle ideas with Ruby, Javascript, or Go. In his daily role a Developer Advocate for EMC {code}, he works with a team to focus and publish all things open source.</p>	
+				</div>
+					
+				<div id="Luis_Herrera_Bentez7086" class="captian_info">	
+					<span class="name">Luis Herrera Benítez</span>		
+					<p>Luis is a AWS ambassador. Entrepreneurial self-starter with substantial international experience. A versatile IT professional with a successful background deploying solutions in challenging and diverse environments worldwide. Lived in 4 different countries, worked in projects throughout 18 (Europe, America, Asia) and visited 32!
+Specialties: Business development, technical evangelism, complex technical sales, solution architecture, account management, project change management and operational readiness, Cloud architectures (AWS Certified Solutions Architect), DevOps and Docker containers</p>	
+				</div>
+					
+				<div id="Bret_Fisher6863" class="captian_info">	
+					<span class="name">Bret Fisher</span>		
+					<p>For 20 years Bret has designed, built, and operated systems from 4 to 4000.  He currently focuses on DevOps style activities in the public cloud and enterprise. Bret works on creating immutable infrastructures, automation, containers, CI/CD, intelligent monitoring, and an occasional JavaScript developer. He spends his free time in Virginia's local, thriving tech scene helping lead local Code for America and Docker Meetup groups. He basically spend his days helping people. Bret lives at the beach. Dogs not Cats.</p>	
+				</div>
+					
+				<div id="Kyle_Baley6891" class="captian_info">	
+					<span class="name">Kyle Baley</span>		
+					<p>Known throughout the land (for certain, fairly restrictive, definitions of “land”) as The Coding Hillbilly, Kyle’s career choices have hinged on a single criterium: to have fun. Luckily, he finds software development fun as opposed to, say, shark taunting.
+
+Kyle has spoken at various conferences over the years and is the co-author of Brownfield Application Development in .NET.</p>	
+				</div>
+					
+				<div id="Rafael_Gomes7129" class="captian_info">	
+					<span class="name">Rafael Gomes</span>		
+					<p>Consultant at ThoughtWorks , focused on
+infrastructure as code, Devops culture and cloud.
+
+Author of the book "Docker para desenvolvedores "(Docker for developers) : https://leanpub.com/dockerparadesenvolvedores (in Portuguese only yet)</p>	
+				</div>
+					
+				<div id="Laura_Frank6888" class="captian_info">	
+					<span class="name">Laura Frank</span>		
+					<p>Laura is a developer focused on making tools for other developers. As an engineer at Codeship, she works on improving the Docker infrastructure and overall experience for users on Codeship. Previously, she worked on several open source projects to support Docker in the early stages of the project, including Panamax and ImageLayers. She currently lives in Berlin.</p>	
+				</div>
+					
+				<div id="Ajeet_Singh_Raina6869" class="captian_info">	
+					<span class="name">Ajeet Singh Raina</span>		
+					<p>Ajeet Singh Raina is currently working as Technical Lead Engineer in Dell India R&D. He has picked up a variety of skills in his career, from having worked as an IT consultant, System administrator to System Integration testing. He received a certification in VMware Certified Professional(VCP 4.1) while he was a part of VMQA GOS Validation Team at VMware. He is currently working in Enterprise Solution Group at Dell India R&D and has solid understanding of a diverse range of IT infrastructure, system management, system integration engineering and quality assurance.
+
+Ajeet has a great passion for upcoming trends and technologies. He loves contributing towards Open source space through writing and blogging @ http://www.collabnix.com. He is currently busy in evaluating and building up containers and microservices for his organization. He is reviewing couple of Docker related upcoming books from various renowned publishers.</p>	
+				</div>
+					
+				<div id="Everett_Toews9984" class="captian_info">	
+					<span class="name">Everett Toews</span>		
+					<p>Everett Toews is a Developer Advocate at Rackspace working on [Carina](https://getcarina.com/). Sometimes dev, sometimes ops, and sometimes advocate. He's interested in composing systems using APIs, SDKs, CLIs, and Docker. He likes to teach what he learns along the way.
+</p>	
+				</div>
+					
+				<div id="Jonobie_Ford6864" class="captian_info">	
+					<span class="name">Jonobie Ford</span>		
+					<p>Jonobie is a Senior Program Manager on the System Center Virtual Machine Manager team.</p>	
+				</div>
+					
+				<div id="Armen_Shimoon6899" class="captian_info">	
+					<span class="name">Armen Shimoon</span>		
+					<p>I'm a software engineer that has his roots in .NET and C#. I'm currently building cloud services using Java on Linux. I love the power of C# and the versatility of web services and Linux. .NET liberty is the place where I share my adventures and learning in these areas with the world.</p>	
+				</div>
+					
+				<div id="Dimitris_Kapanidis7083" class="captian_info">	
+					<span class="name">Dimitris Kapanidis</span>		
+					<p>Dimitris is founder of  <a href="https://harbur.io"> Harbur</a>, a consulting firm based in Barcelona. Helping companies design & implement highly scalable and self healing solutions empowered by the best-of-breed Container, Cloud and Automation technologies. Also help in introducing and implementing Agile, DevOps, Microservices and Continuous Delivery practices and provide training to the client’s teams for the adoption of the technologies.
+
+He also co-runs the Docker Barcelona Meetup.</p>	
+				</div>
+					
+				<div id="Benjamin_Wootton7080" class="captian_info">	
+					<span class="name">Benjamin Wootton</span>		
+					<p>Benjamin is the Co-Founder of Contino, a global DevOps consultancy and Docker partner.  He is a certified Docker trainer and consultant and also co-runs the Docker London meetup. </p>	
+				</div>
+					</div> 
+	</div>
+	</div>
+	</div>
+</section>
+</div>			<a class="exit-off-canvas"></a>
+		</div>
+	</div>
+
+	<div class="moby_footer">
+<i class="moby"></i>
+</div>
+<footer class="main_footer">
+	<div class="container">
+		<div class="top_footer">
+			<div class="row">
+				<div class="col-xs-12 col-sm-5 col-md-5 col-sm-push-3 col-md-push-3">
+					<h6>Connect</h6>
+					<p>Subscribe to our newsletter</p>
+					<div class=" newsletter"> 
+						<script src="//app-sj05.marketo.com/js/forms2/js/forms2.min.js"></script>
+						<form id="mktoForm_1038"></form>
+						<script>
+							MktoForms2.loadForm("//app-sj05.marketo.com", "929-FJL-178", 1038, function(form) {
+								form.onSuccess(function(values, followUpUrl) {
+									location.href = "/thank-you-subscribing-docker-newsletter";
+									return false;
+								});
+							});
+							MktoForms2.whenReady(function(form){
+							/*	$('#mktoForm_1038 #Email').attr('placeholder', 'Enter your email'); */
+							});
+						</script> 
+					</div>
+					<ul class="social-icons">
+						<li class="facebook"><a target="_blank" href="https://www.facebook.com/docker.run">facebook</a></li>
+						<li class="google"><a target="_blank" href="https://plus.google.com/u/0/communities/108146856671494713993">google-plus</a></li>
+						<li class="github"><a target="_blank" href="https://github.com/docker/docker">github</a></li>
+						<li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/docker">linkedin</a></li>
+						<li class="youtube"><a target="_blank" href="http://www.youtube.com/user/dockerrun">youtube</a></li>
+						<li class="reddit"><a target="_blank" href="http://www.reddit.com/r/docker">reddit</a></li>
+						<li class="twitter"><a target="_blank" href="http://twitter.com/docker">twitter</a></li>
+						<li class="slideshare"><a target="_blank" href="http://www.slideshare.net/docker">slideshare</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3 col-sm-pull-5 col-md-pull-5 sm-margin-top-40">
+				<h6>Docker</h6>
+					<ul class="menu"><li class="first leaf"><a href="/products/overview">Get Started</a></li>
+<li class="leaf"><a href="https://docs.docker.com/" target="_blank">Docs</a></li>
+<li class="leaf"><a href="http://blog.docker.com/" target="_blank">Blog</a></li>
+<li class="leaf"><a href="https://training.docker.com/" target="_blank">Training</a></li>
+<li class="leaf"><a href="https://www.docker.com/docker-support-services">Support &amp; Services</a></li>
+<li class="leaf"><a href="https://goto.docker.com/contact-us.html">Contact Sales</a></li>
+<li class="last leaf"><a href="/open-source">Open Source</a></li>
+</ul>				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4 sm-margin-top-40">
+					<h6>Related Links</h6>
+					<!--8df6590d0d74f73adbfe5f8379f58893-->
+<ul class="cp_linklist">
+	<li><a href="https://www.docker.com/cp/docker-and-aws">Docker And Aws</a></li>
+	<li><a href="https://www.docker.com/cp/container-management-orchestration">Container Management Orchestration</a></li>
+	<li><a href="https://www.docker.com/cp/docker-container-management">Docker Container Management</a></li>
+	<li><a href="https://www.docker.com/cp/docker-and-k8s">Docker And K8s</a></li>
+	<li><a href="https://www.docker.com/cp/container-orchestration-engines">Container Orchestration Engines</a></li>
+	<li><a href="https://www.docker.com/cp/container-management">Container Management</a></li>
+	<li><a href="https://www.docker.com/cp/docker-and-kubernetes">Docker And Kubernetes</a></li>
+</ul>
+					<div id="block-block-5" class="block block-block">
+				<script>
+<!--//--><![CDATA[// ><!--
+
+var   BuyButtonURL_0 = 'https://hub.docker.com'
+,	BuyButtonURL_1 = 'https://hub.docker.com/account/billing-plans/create-subscription/?plan=index_personal_micro'
+,	BuyButtonURL_2 = 'https://hub.docker.com/account/billing-plans/create-subscription/?plan=index_personal_small'
+,	BuyButtonURL_3 = 'https://hub.docker.com/account/billing-plans/create-subscription/?plan=index_personal_medium'
+,	BuyButtonURL_4 = 'https://hub.docker.com/account/billing-plans/create-subscription/?plan=index_personal_large'
+,	BuyButtonURL_5 = 'https://hub.docker.com/account/billing-plans/create-subscription/?plan=index_personal_xlarge'
+,	BuyButtonURL_6 = 'https://hub.docker.com/account/billing-plans/create-subscription/?plan=index_personal_xxlarge'
+,	BuyButtonURL_cloud_starter = 'https://hub.docker.com/enterprise/cloud-starter/'
+,	BuyButtonURL_inquiry = 'http://goto.docker.com/sales-inquiry.html'
+,	buybuttontxt_signup = 'Sign Up'
+,	BuyButtontxt_buy = 'Buy'
+,	buybuttontxt_quote = 'Request Quote'
+,	RepoPricing_free = '<span>Free'
+,	RepoPricing_CriticalSupport = 'Call toll free at 888-214-4258, or'
+,	PricingInfo_Text = ' Private Repos & Parallel Builds<li>Community Hub Support'
+,	PricingInfo_freeText = ' Private Repo & Parallel Build<li>Community Hub Support'
+,	PricingInfo_CommercialSupportText = ' Private Repos & Parallel Builds<li>Up to 10 Docker Engines<li>Email Support'
+,	PricingInfo_CriticalSupportText = ' Private Repos & Parallel Builds<li>Starting at 10 Docker Engines<li>Mon-Fri Same Business Day <br>or 24/7 Critical Support';
+
+
+//--><!]]>
+</script><!--[if IE]>
+<style>
+hr.moby::after {
+    background: url("../images/moby-tiny.png") no-repeat;
+}
+</style>
+<![endif]--><style>
+<!--/*--><![CDATA[/* ><!--*/
+
+
+
+
+/*--><!]]>*/
+</style></div><div id="block-block-1" class="block block-block">
+				<!-- Ethnio High Traffic Activation Code -->
+<script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+if(Math.floor(Math.random()*4)==0) document.write('<script type=\"text/javascript\" language=\"javascript\" src=\"//ethn.io/71802.js\" async=\"true\" charset=\"utf-8\"><\/script>');
+//--><!]]>
+</script></div><div id="block-block-13" class="block block-block">
+				<style>
+<!--/*--><![CDATA[/* ><!--*/
+
+.node-type-front-page .dockercon16 section.title_section.darkblue a.button{
+    margin-left: 0;
+}
+section.livedockercon_section.section .right a.button.darkblue-btn {
+    max-width: 100%;
+}
+.sidebarnav_section ul {
+    display: block;
+}
+@media (max-width: 767px) {
+div.dockercon_registation_section .cross-btn {
+    width: inherit;
+}
+section.title_section.darkblue img {
+    max-height: 250px;
+}
+.dockercon16 section.title_section .textalign-left a.button, .dockercon16 section.title_section .textalign-left a.button+a.button {
+    margin: 20px 0;
+}
+}
+
+/*--><!]]>*/
+</style></div>				</div>
+			</div>
+		</div>
+		<div class="bottom_footer">
+			<div class="footer-nav">
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-5 col-md-push-7">
+		<nav class="primary-footer-sub-nav">
+			<ul class="menu"><li class="first leaf"><a href="/products/docker-hub">Hub</a></li>
+<li class="leaf"><a href="http://www.cafepress.com/docker/">Swag</a></li>
+<li class="leaf"><a href="http://status.docker.com/">Status</a></li>
+<li class="leaf"><a href="/docker-security">Security</a></li>
+<li class="leaf"><a href="/legal">Legal</a></li>
+<li class="last leaf"><a href="https://www.docker.com/company/contact">Contact</a></li>
+</ul>		</nav>
+	</div>
+	<div class="col-xs-12 col-sm-12 col-md-7 col-md-pull-5">
+		<p>
+		Build, Ship, Run. An open platform for distributed applications for developers and sysadmins		</p> 
+	</div>
+</div>
+			</div>
+			<div class="footer-copyright">
+				<p class="copyright">
+					Copyright © 2016 Docker Inc. All rights reserved.				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+		<script src="/sites/all/themes/docker/assets/js/alljs.js"></script>
+	<script async src="/sites/all/themes/docker/assets/js/app.js"></script>
+		<!-- Google Tag Manager --> 
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PSVHG8" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PSVHG8');</script>
+	<!-- End Google Tag Manager -->
+	<script>
+	$(document).ready(function() {
+$(".livedockercon_section .video_container a.play_btn").click(function() {
+	console.log('a');
+  $(".video_container").animate({
+    opacity: "0"
+  }, 1000, "linear", function() {
+	$(this).css('z-index','0');
+  });
+  $("#docker-con-video-iframe").show("fast", function() {
+	  var getSRC =  $(this).attr('src');
+	  var newSRC = getSRC.replace("autoplay=false", "autoplay=true");
+    $(this).attr('src', newSRC).animate({ opacity: "1" }, 1000);
+  });
+});
+	});
+$(window).load(function() {
+/*  $('.pricing-tables > li.standard').css({ transform: "scale(1.05)" }); */
+});
+	</script>
+	
+	<!-- window sticky -->
+<script>
+	$(window).scroll(function() {    
+	    var scroll = $(window).scrollTop();
+	     //console.log(scroll);
+	    if (scroll >= 50) {
+	        //console.log('a');
+	        $(".header").addClass("change");
+	    } else {
+	        //console.log('a');
+	        $(".header").removeClass("change");
+	    }
+	});
+</script>
+<!-- menu -->
+<script>
+(function(){
+    var burger = document.querySelector('.burger-container'),
+        header = document.querySelector('.header');
+        body = document.querySelector('body');
+    
+    burger.onclick = function() {
+        header.classList.toggle('menu-opened');
+        body.classList.toggle('overflow-hidden');
+    }
+}());
+</script>
+<!-- mobile nav -->
+<script>
+	$(document).ready(function() {
+	    $('.subnav').hide();
+	    $('#element').click(function() {
+	        $('.subnav').slideToggle(100);
+	        return false;
+	    });
+	});
+</script>
+<script>
+	$(document).ready(function() {
+	    $('.subnav2').hide();
+	    $('#element2').click(function() {
+	        $('.subnav2').slideToggle(100);
+	        return false;
+	    });
+	});
+</script>
+<!-- end window sticky -->
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"1ceb24fd1c","applicationID":"9142893","transactionName":"YVVaZRcCXRVTAUALWlgfeVIRClwIHQxbBlBpQFlWADxFD1cV","queueTime":0,"applicationTime":1176,"atts":"TRJZE18YThs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
