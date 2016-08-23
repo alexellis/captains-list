@@ -4,8 +4,6 @@ ADD package.json ./package.json
 
 RUN npm i
 
-ADD ./app.js ./app.js
-ADD ./parser.js ./parser.js
-ADD ./location.js ./location.js
+ADD ./*.js ./*.js
 
 CMD ["node", "app.js"]
