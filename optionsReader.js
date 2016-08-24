@@ -12,6 +12,9 @@ module.exports = (argv) =>
         if (parts[0] === "--mode" && parts[1] === "locations") {
             options.mode = "locations";
         }
+        if (parts[0] === "--mode" && parts[1] === "json") {
+            options.mode = "json";
+        }
         if (parts[0] === "--help") {
             options.help = "help";
         }

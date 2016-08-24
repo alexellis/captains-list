@@ -69,9 +69,39 @@ let locationPrinter = (captains, done) => {
   });
 };
 
+let jsonPrinter = (captains, done) => {
+  let location = new Location(cheerio, request);
+  let work = captains.length;
+  var json = {
+    captains: []
+  };
+
+  captains.forEach((cap)=> {
+    if(cap.valid) {
+      location.retrieve(cap.text, (details) => {
+        // console.log(cap.text + ": " +  details);
+        json["captains"].push({
+          "screen_name": cap.text,
+          "location": details
+        });
+        work--;
+        if(work==0) {
+          console.log(JSON.stringify(json));
+          return;
+        }
+      });
+    }
+    else {
+      work--;
+    }
+  });
+};
+
 let next = printer;
 if(options.mode=="locations") {
   next = locationPrinter;
+} else if(options.mode=="json") {
+  next = jsonPrinter;
 }
 
 
