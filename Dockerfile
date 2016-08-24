@@ -6,4 +6,4 @@ RUN npm i
 
 ADD ./*.js ./
 
-CMD ["node", "app.js"]
+ENTRYPOINT ["node", "app.js"]
