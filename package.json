@@ -10,7 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async": "^2.5.0",
     "cheerio": "^0.20.0",
+    "node-geocoder": "^3.15.0",
+    "node-open-geocoder": "^1.2.1",
     "request": "^2.74.0"
   }
 }

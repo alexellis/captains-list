@@ -1,4 +1,5 @@
-FROM mhart/alpine-node:4.5
+FROM node:6.11.2-alpine
+RUN apk --no-cache add ca-certificates
 
 ADD package.json ./package.json
 

@@ -4,6 +4,7 @@ let cheerio = require('cheerio');
 let Parser = require('./parser');
 let Location = require('./location');
 let request = require('request');
+let async = require('async');
 let fs = require('fs');
 let optionsReader = require('./optionsReader');
 
@@ -11,100 +12,86 @@ let debug = false;
 
 let options = optionsReader(process.argv);
 
-if(options.help) {
-  let helpStr = `captains:
+if (options.help) {
+    let helpStr = `captains:
   --debug                       Print additional information
   --mode=list                   Set the output mode: available modes are 
-                                  <list,locations>
+                                  <list,json>
+                                  json option also includes locations.
   --help                        This information`
-  console.log(helpStr); 
-  return;
+    console.log(helpStr);
+    return;
 }
 
 let createList = (next, done) => {
-  let parser = new Parser(cheerio);
+    let parser = new Parser(cheerio);
 
-  request.get("https://www.docker.com/community/docker-captains", (err, res, text) => {
-    let captains = parser.parse(text);
+    request.get("https://www.docker.com/api/docker_captains_ajax/all/all/all/all/all/all", (err, res, text) => {
+        let captainPages = parser.parsePages(text);
 
-    let valid = 0;
-    let sorted = captains.sort((x,y) => {
-      if(x.text > y.text) {
-        return 1;
-      }
-      else if(x.text < y.text) {
-        return -1;
-      }
-      return 0;
+        getCaptains(captainPages, (err, captains) => {
+            let sorted = captains.sort((x, y) => {
+                if (x.text > y.text) {
+                    return 1;
+                } else if (x.text < y.text) {
+                    return -1;
+                }
+                return 0;
+            });
+
+            next(sorted, done);
+        });
     });
-    next(sorted, done);
-  });
 };
 
 let printer = (captains, done) => {
-  captains.forEach((cap)=> {
-    if(cap.valid) {
-      console.log(cap.text);
-    }
+    captains.forEach((cap) => {
+        console.log(cap.text);
+    });
     done();
-  });
 }
 
 let locationPrinter = (captains, done) => {
-  let location = new Location(cheerio, request);
-  let work = captains.length;
-  captains.forEach((cap)=> {
-    if(cap.valid) {
-      location.retrieve(cap.text, (details) => {
-        console.log(cap.text + ": " +  details);
-        work--;
-        if(work==0) {
-          return;
-        }
-      });
-    }
-    else {
-      work--;
-    }
-  });
+    let location = new Location(cheerio, request);
+    captains.forEach((cap) => {
+        console.log(cap.text + ": " + cap.location);
+    });
 };
 
 let jsonPrinter = (captains, done) => {
-  let location = new Location(cheerio, request);
-  let work = captains.length;
-  var json = {
-    captains: []
-  };
-
-  captains.forEach((cap)=> {
-    if(cap.valid) {
-      location.retrieve(cap.text, (details) => {
-        // console.log(cap.text + ": " +  details);
-        json["captains"].push({
-          "screen_name": cap.text,
-          "location": details
-        });
-        work--;
-        if(work==0) {
-          console.log(JSON.stringify(json));
-          return;
-        }
-      });
-    }
-    else {
-      work--;
-    }
-  });
+    console.log(JSON.stringify(captains));
 };
 
 let next = printer;
-if(options.mode=="locations") {
-  next = locationPrinter;
-} else if(options.mode=="json") {
-  next = jsonPrinter;
+if (options.mode == "json") {
+    next = jsonPrinter;
 }
 
 
-createList(next, () => {
+createList(next, () => {});
 
-});
+function getCaptains(pages, done) {
+    let parser = new Parser(cheerio);
+    let concurrent = 10;
+    let captains = [];
+    let q = async.queue((task, cb) => {
+            let req = {
+                url: "https://www.docker.com/" + task
+            };
+            request.get(req, (err, res, body) => {
+                let captain = parser.parseCaptain(body);
+                captains.push({ "text": captain.link, "location": captain.location });
+
+                cb(err);
+            });
+        },
+        concurrent);
+
+    pages.forEach((page) => {
+        q.push(page);
+    });
+
+    q.drain = function() {
+        done(null, captains);
+    }
+}
